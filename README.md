@@ -10,20 +10,9 @@ Use the git
 
 ```bash
 git clone https://github.com/raimapo/UAVCAN-examples.git
-```
-
-use git in module directory to clone libuavcan library
-```bash
-mkdir modules
-cd modules
-git clone https://github.com/UAVCAN/libuavcan.git
-cd libuavcan
+cd UAVCAN-examples
 git submodule update --init --recursive
-git checkout 67da0aa
 ```
-commit changed because with master choeckout library has some issues.
-
-
 ## Usage
 
 ```
