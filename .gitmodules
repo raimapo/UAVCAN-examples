@@ -1,0 +1,6 @@
+[submodule "libuavcan"]
+	path = libuavcan
+	url = https://github.com/UAVCAN/libuavcan.git
+[submodule "modules/libuavcan"]
+	path = modules/libuavcan
+	url = https://github.com/UAVCAN/libuavcan.git

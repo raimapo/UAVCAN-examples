@@ -14,6 +14,8 @@ git clone https://github.com/raimapo/UAVCAN-examples.git
 
 use git in module directory to clone libuavcan library
 ```bash
+mkdir modules
+cd modules
 git clone https://github.com/UAVCAN/libuavcan.git
 cd libuavcan
 git submodule update --init --recursive
