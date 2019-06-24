@@ -26,9 +26,8 @@ Import each project from dowloaded directory.
 1. Simple UAVCAN start
 2. Dynamic ID Client
 3. Dynamic ID Server Centralized control (Help needed)
-4. Publisher and subscriber (on going)
-4. Bootloader (Help needed)
-5. Application which understands to restart for the Bootloader (Help needed)
+4. Publisher (Use UAVCAN Tool GUI to monitor BUS)
+5. Subscriber (Use any serial terminal to monitor values. UAVCAN Tool GUI -> Interactive console ->  broadcast(uavcan.protocol.debug.KeyValue(key='key', value=123), interval=1) and press ENTER)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

@@ -9,10 +9,10 @@
   * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
   * All rights reserved.</center></h2>
   *
-  * This software component is licensed by ST under BSD 3-Clause license,
-  * the "License"; You may not use this file except in compliance with the
-  * License. You may obtain a copy of the License at:
-  *                        opensource.org/licenses/BSD-3-Clause
+  * This software component is licensed by ST under Ultimate Liberty license
+  * SLA0044, the "License"; You may not use this file except in compliance with
+  * the License. You may obtain a copy of the License at:
+  *                             www.st.com/SLA0044
   *
   ******************************************************************************
   */
@@ -26,6 +26,10 @@
 /* USER CODE BEGIN Includes */
 #include <uavcan_stm32/uavcan_stm32.hpp>
 #include <uavcan/uavcan.hpp>
+
+
+#include <iostream>
+#include <uavcan/protocol/debug/KeyValue.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -39,7 +43,6 @@
 
 #define DEBUG_BUFFER_SIZE    (256)
 #define DEBUG_TIMEOUT        (1000)
-
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -75,7 +78,6 @@ extern "C" {
 
 bool DEBUG_Init(void);
 void DEBUG_Printf(const char *fmt, ...);
-
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -121,7 +123,6 @@ int main(void)
   MX_USART3_UART_Init();
   MX_USB_OTG_FS_PCD_Init();
   /* USER CODE BEGIN 2 */
-
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
   __HAL_RCC_CAN1_CLK_ENABLE();
@@ -399,7 +400,7 @@ void StartDefaultTask(void const * argument)
 
 	can.init(value);
 
-	getNode().setName("org.test");
+	getNode().setName("org.Subscriber.test");
 
 	getNode().setNodeID(5);
 
@@ -408,17 +409,27 @@ void StartDefaultTask(void const * argument)
 	    while (1);
 	}
 
-	getNode().setModeOperational();
+    uavcan::Subscriber<uavcan::protocol::debug::KeyValue> kv_sub(getNode());
+    const int kv_sub_start_res =
+        kv_sub.start([&](const uavcan::protocol::debug::KeyValue& msg){
+    	DEBUG_Printf("value=%s\r\n", msg.key);							//needs correction
+    	DEBUG_Printf("value=%d\r\n", (uint32_t) msg.value);}
+    );
+    if (kv_sub_start_res < 0)
+    {
+    	DEBUG_Printf("Failed to start the key/value subscriber\r\n");
+    }
 
+	getNode().setModeOperational();
 
   /* Infinite loop */
   for(;;)
   {
-	    const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
-	    if (res < 0) {
-	    	DEBUG_Printf("UAVCAN spin fail\r\n");
-	    	while(1);
-	    }
+	  const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
+	  if (res < 0) {
+		  DEBUG_Printf("UAVCAN spin fail\r\n");
+		  while(1);
+	  }
   }
   /* USER CODE END 5 */ 
 }

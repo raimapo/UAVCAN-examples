@@ -26,6 +26,8 @@
 /* USER CODE BEGIN Includes */
 #include <uavcan_stm32/uavcan_stm32.hpp>
 #include <uavcan/uavcan.hpp>
+
+#include <uavcan/protocol/debug/KeyValue.hpp> // uavcan.protocol.debug.KeyValue
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -394,12 +396,11 @@ void StartDefaultTask(void const * argument)
 {
 
   /* USER CODE BEGIN 5 */
-
 	uint32_t value = 1000000;
 
 	can.init(value);
 
-	getNode().setName("org.test");
+	getNode().setName("org.Publisher.test");
 
 	getNode().setNodeID(5);
 
@@ -407,6 +408,17 @@ void StartDefaultTask(void const * argument)
 		DEBUG_Printf("UAVCAN start fail\r\n");
 	    while (1);
 	}
+
+    uavcan::Publisher<uavcan::protocol::debug::KeyValue> kv_pub(getNode());
+    const int kv_pub_init_res = kv_pub.init();
+    if (kv_pub_init_res < 0)
+    {
+    	DEBUG_Printf("Failed to start the publisher\r\n");
+    }
+
+    //if needed
+    kv_pub.setTxTimeout(uavcan::MonotonicDuration::fromMSec(1000));
+    kv_pub.setPriority(uavcan::TransferPriority::MiddleLower);
 
 	getNode().setModeOperational();
 
@@ -419,6 +431,20 @@ void StartDefaultTask(void const * argument)
 	    	DEBUG_Printf("UAVCAN spin fail\r\n");
 	    	while(1);
 	    }
+
+	    uavcan::protocol::debug::KeyValue kv_msg;  // Always zero initialized
+	    kv_msg.value = std::rand() / float(RAND_MAX);
+
+        kv_msg.key = "a";   // "a"
+        kv_msg.key += "b";  // "ab"
+        kv_msg.key += "c";  // "abc"
+
+        const int pub_res = kv_pub.broadcast(kv_msg);
+        if (pub_res < 0)
+        {
+        	DEBUG_Printf("KV publication failure\r\n");
+        }
+
   }
   /* USER CODE END 5 */ 
 }
