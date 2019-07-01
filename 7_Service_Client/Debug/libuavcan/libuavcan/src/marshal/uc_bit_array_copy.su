@@ -1,0 +1,3 @@
+uc_bit_array_copy.cpp:12:6:void uavcan::bitarrayCopy(const unsigned char*, std::size_t, std::size_t, unsigned char*, std::size_t)	56	static
+templates.hpp:291:10:const T& uavcan::max(const T&, const T&) [with T = unsigned char]	16	static
+templates.hpp:281:10:const T& uavcan::min(const T&, const T&) [with T = unsigned int]	16	static

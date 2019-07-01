@@ -1,0 +1,8 @@
+transfer.hpp:46:5:uavcan::TransferPriority::TransferPriority(uavcan::uint8_t)	16	static
+transfer.hpp:64:10:bool uavcan::TransferPriority::isValid() const	16	static
+transfer.hpp:99:13:uavcan::uint8_t uavcan::TransferID::get() const	16	static
+transfer.hpp:126:5:uavcan::NodeID::NodeID(uavcan::uint8_t)	16	static
+transfer.hpp:134:10:bool uavcan::NodeID::isValid() const	16	static
+uc_transfer.cpp:44:5:int uavcan::TransferID::computeForwardDistance(uavcan::TransferID) const	32	static
+uc_transfer.cpp:56:1:void __static_initialization_and_destruction_0(int, int)	16	static
+uc_transfer.cpp:56:1:cpp)	8	static

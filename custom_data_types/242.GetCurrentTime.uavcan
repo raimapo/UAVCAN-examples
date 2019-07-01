@@ -1,0 +1,14 @@
+#
+# This service accepts nothing and returns the current time on the server node.
+#
+# All DSDL definitions should contain a header comment (like this one) that
+# explains what this data type is designed for and how to use it.
+#
+
+# This service does not accept any parameters, so the request part is empty
+
+---
+
+# Current time.
+# Note that the data type "uavcan.Timestamp" is defined by the UAVCAN specification.
+uavcan.Timestamp time

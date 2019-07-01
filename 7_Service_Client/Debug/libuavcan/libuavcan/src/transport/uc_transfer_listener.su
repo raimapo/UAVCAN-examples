@@ -1,0 +1,111 @@
+templates.hpp:34:17:static void uavcan::StaticAssert<true>::check()	4	static
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+transfer.hpp:80:5:uavcan::TransferID::TransferID()	16	static
+transfer.hpp:124:5:uavcan::NodeID::NodeID()	16	static
+transfer.hpp:134:10:bool uavcan::NodeID::isValid() const	16	static
+transfer.hpp:135:10:bool uavcan::NodeID::isBroadcast() const	16	static
+transfer.hpp:136:10:bool uavcan::NodeID::isUnicast() const	16	static
+transfer.hpp:139:10:bool uavcan::NodeID::operator==(uavcan::NodeID) const	16	static
+new:168:14:void* operator new(std::size_t, void*)	16	static
+abstract_transfer_buffer.hpp:19:13:uavcan::ITransferBuffer::~ITransferBuffer()	16	static
+abstract_transfer_buffer.hpp:19:13:virtual uavcan::ITransferBuffer::~ITransferBuffer()	16	static
+time.hpp:194:5:uavcan::UtcTime::UtcTime()	16	static
+time.hpp:191:21:uavcan::UtcTime::~UtcTime()	16	static
+time.hpp:184:21:uavcan::MonotonicTime::MonotonicTime()	16	static
+time.hpp:184:21:uavcan::MonotonicTime::~MonotonicTime()	16	static
+frame.hpp:64:22:uavcan::TransferPriority uavcan::Frame::getPriority() const	16	static
+frame.hpp:72:14:unsigned int uavcan::Frame::getPayloadLen() const	16	static
+frame.hpp:73:20:const uint8_t* uavcan::Frame::getPayloadPtr() const	16	static
+frame.hpp:75:18:uavcan::TransferType uavcan::Frame::getTransferType() const	16	static
+frame.hpp:77:12:uavcan::NodeID uavcan::Frame::getSrcNodeID() const	16	static
+frame.hpp:78:12:uavcan::NodeID uavcan::Frame::getDstNodeID() const	16	static
+frame.hpp:79:16:uavcan::TransferID uavcan::Frame::getTransferID() const	16	static
+frame.hpp:84:10:bool uavcan::Frame::isStartOfTransfer() const	16	static
+frame.hpp:85:10:bool uavcan::Frame::isEndOfTransfer() const	16	static
+frame.hpp:128:19:uavcan::MonotonicTime uavcan::RxFrame::getMonotonicTimestamp() const	16	static
+frame.hpp:133:13:uavcan::UtcTime uavcan::RxFrame::getUtcTimestamp() const	16	static
+frame.hpp:135:13:uavcan::uint8_t uavcan::RxFrame::getIfaceIndex() const	16	static
+abstract_transfer_buffer.hpp:16:21:constexpr uavcan::ITransferBuffer::ITransferBuffer()	16	static
+transfer_buffer.hpp:69:5:uavcan::TransferBufferManagerKey::TransferBufferManagerKey()	16	static
+transfer_buffer.hpp:75:5:uavcan::TransferBufferManagerKey::TransferBufferManagerKey(uavcan::NodeID, uavcan::TransferType)	16	static
+transfer_buffer.hpp:82:10:bool uavcan::TransferBufferManagerKey::operator==(const uavcan::TransferBufferManagerKey&) const	16	static
+transfer_buffer.hpp:87:10:bool uavcan::TransferBufferManagerKey::isEmpty() const	16	static
+transfer_buffer.hpp:186:5:uavcan::TransferBufferAccessor::TransferBufferAccessor(uavcan::TransferBufferManager&, uavcan::TransferBufferManagerKey)	24	static
+transfer_buffer.hpp:192:22:uavcan::ITransferBuffer* uavcan::TransferBufferAccessor::access()	16	static
+transfer_buffer.hpp:194:10:void uavcan::TransferBufferAccessor::remove()	16	static
+transfer_receiver.hpp:71:5:uavcan::TransferReceiver::TransferReceiver()	16	static
+transfer_receiver.hpp:86:19:uavcan::MonotonicTime uavcan::TransferReceiver::getLastTransferTimestampMonotonic() const	16	static
+transfer_receiver.hpp:87:13:uavcan::UtcTime uavcan::TransferReceiver::getLastTransferTimestampUtc() const	16	static
+transfer_receiver.hpp:89:14:uavcan::uint16_t uavcan::TransferReceiver::getLastTransferCrc() const	16	static
+perf_counter.hpp:50:10:void uavcan::TransferPerfCounter::addRxTransfer()	16	static
+perf_counter.hpp:54:10:void uavcan::TransferPerfCounter::addErrors(unsigned int)	24	static
+crc.hpp:60:10:void uavcan::TransferCRC::add(uavcan::uint8_t)	16	static
+crc.hpp:66:10:void uavcan::TransferCRC::add(const uint8_t*, unsigned int)	24	static
+crc.hpp:75:14:uavcan::uint16_t uavcan::TransferCRC::get() const	16	static
+transfer_listener.hpp:38:5:uavcan::IncomingTransfer::IncomingTransfer(uavcan::MonotonicTime, uavcan::UtcTime, uavcan::TransferPriority, uavcan::TransferType, uavcan::TransferID, uavcan::NodeID, uavcan::uint8_t)	24	static
+transfer_listener.hpp:54:18:virtual void uavcan::IncomingTransfer::release()	16	static
+transfer_listener.hpp:59:18:virtual bool uavcan::IncomingTransfer::isAnonymousTransfer() const	16	static
+transfer_listener.hpp:64:18:uavcan::TransferType uavcan::IncomingTransfer::getTransferType() const	16	static
+transfer_listener.hpp:66:12:uavcan::NodeID uavcan::IncomingTransfer::getSrcNodeID() const	16	static
+transfer_listener.hpp:93:18:virtual void uavcan::MultiFrameIncomingTransfer::release()	16	static
+transfer_listener.hpp:114:9:uavcan::TransferListener::TimedOutReceiverPredicate::TimedOutReceiverPredicate(uavcan::MonotonicTime, uavcan::TransferBufferManager&)	24	static
+uc_transfer_listener.cpp:15:5:virtual int uavcan::IncomingTransfer::write(unsigned int, const uint8_t*, unsigned int)	24	static
+transfer_listener.hpp:24:21:uavcan::IncomingTransfer::~IncomingTransfer()	16	static
+transfer_listener.hpp:24:21:virtual uavcan::IncomingTransfer::~IncomingTransfer()	16	static
+uc_transfer_listener.cpp:24:1:uavcan::SingleFrameIncomingTransfer::SingleFrameIncomingTransfer(const uavcan::RxFrame&)	72	static
+uc_transfer_listener.cpp:33:5:virtual int uavcan::SingleFrameIncomingTransfer::read(unsigned int, uavcan::uint8_t*, unsigned int) const	24	static
+uc_transfer_listener.cpp:53:6:virtual bool uavcan::SingleFrameIncomingTransfer::isAnonymousTransfer() const	24	static
+uc_transfer_listener.cpp:61:1:uavcan::MultiFrameIncomingTransfer::MultiFrameIncomingTransfer(uavcan::MonotonicTime, uavcan::UtcTime, const uavcan::RxFrame&, uavcan::TransferBufferAccessor&)	80	static
+uc_transfer_listener.cpp:71:5:virtual int uavcan::MultiFrameIncomingTransfer::read(unsigned int, uavcan::uint8_t*, unsigned int) const	40	static
+uc_transfer_listener.cpp:85:6:bool uavcan::TransferListener::TimedOutReceiverPredicate::operator()(const uavcan::TransferBufferManagerKey&, const uavcan::TransferReceiver&) const	40	static
+uc_transfer_listener.cpp:106:6:bool uavcan::TransferListener::checkPayloadCrc(uavcan::uint16_t, const uavcan::ITransferBuffer&) const	64	static
+uc_transfer_listener.cpp:135:6:void uavcan::TransferListener::handleReception(uavcan::TransferReceiver&, const uavcan::RxFrame&, uavcan::TransferBufferAccessor&)	104	static
+uc_transfer_listener.cpp:180:6:void uavcan::TransferListener::handleAnonymousTransferReception(const uavcan::RxFrame&)	56	static
+uc_transfer_listener.cpp:190:1:uavcan::TransferListener::~TransferListener()	16	static
+uc_transfer_listener.cpp:190:1:virtual uavcan::TransferListener::~TransferListener()	16	static
+transfer_listener.hpp:108:11:uavcan::TransferListener::TimedOutReceiverPredicate::~TimedOutReceiverPredicate()	16	static
+uc_transfer_listener.cpp:196:6:void uavcan::TransferListener::cleanup(uavcan::MonotonicTime)	48	static
+transfer_receiver.hpp:16:21:uavcan::TransferReceiver::~TransferReceiver()	16	static
+uc_transfer_listener.cpp:202:6:virtual void uavcan::TransferListener::handleFrame(const uavcan::RxFrame&)	88	static
+uc_transfer_listener.cpp:243:6:virtual void uavcan::TransferListenerWithFilter::handleFrame(const uavcan::RxFrame&)	16	static
+time.hpp:102:5:uavcan::TimeBase<T, D>::TimeBase() [with T = uavcan::UtcTime; D = uavcan::UtcDuration]	24	static
+time.hpp:100:5:uavcan::TimeBase<T, D>::~TimeBase() [with T = uavcan::UtcTime; D = uavcan::UtcDuration]	16	static
+templates.hpp:238:10:OutputIt uavcan::copy(InputIt, InputIt, OutputIt) [with InputIt = const unsigned char*; OutputIt = unsigned char*]	24	static
+time.hpp:102:5:uavcan::TimeBase<T, D>::TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	24	static
+time.hpp:100:5:uavcan::TimeBase<T, D>::~TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::TransferListener]	16	static
+linked_list.hpp:44:21:uavcan::LinkedListRoot<uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup>::~LinkedListRoot()	16	static
+map.hpp:118:5:uavcan::Map<Key, Value>::~Map() [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	16	static
+map.hpp:327:6:void uavcan::Map<Key, Value>::clear() [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+map.hpp:36:12:uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVPair::~KVPair()	16	static
+map.hpp:269:6:void uavcan::Map<Key, Value>::removeAllWhere(Predicate) [with Predicate = uavcan::TransferListener::TimedOutReceiverPredicate; Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	104	static
+map.hpp:170:10:bool uavcan::Map<Key, Value>::isEmpty() const [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+map.hpp:225:8:Value* uavcan::Map<Key, Value>::access(const Key&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+map.hpp:233:8:Value* uavcan::Map<Key, Value>::insert(const Key&, const Value&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	136	static
+map.hpp:269:6:void uavcan::Map<Key, Value>::removeAllWhere(Predicate) [with Predicate = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::YesPredicate; Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	104	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+map.hpp:51:14:bool uavcan::Map<Key, Value>::KVPair::match(const Key&) const [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	16	static
+map.hpp:41:9:uavcan::Map<Key, Value>::KVPair::KVPair() [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	16	static
+map.hpp:200:6:void uavcan::Map<Key, Value>::compact() [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	48	static
+map.hpp:302:12:const Key* uavcan::Map<Key, Value>::find(Predicate) const [with Predicate = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::YesPredicate; Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	40	static
+map.hpp:184:35:uavcan::Map<Key, Value>::KVPair* uavcan::Map<Key, Value>::findKey(const Key&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+map.hpp:256:6:void uavcan::Map<Key, Value>::remove(const Key&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	88	static
+map.hpp:46:9:uavcan::Map<Key, Value>::KVPair::KVPair(const Key&, const Value&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	32	static
+map.hpp:66:25:static uavcan::Map<Key, Value>::KVGroup* uavcan::Map<Key, Value>::KVGroup::instantiate(uavcan::IPoolAllocator&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	32	static
+linked_list.hpp:102:6:void uavcan::LinkedListRoot<T>::insert(T*) [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+map.hpp:108:14:bool uavcan::Map<Key, Value>::YesPredicate::operator()(const Key&, const Value&) const [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	32	static
+map.hpp:55:12:uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup::~KVGroup()	24	static
+map.hpp:76:21:static void uavcan::Map<Key, Value>::KVGroup::destroy(uavcan::Map<Key, Value>::KVGroup*&, uavcan::IPoolAllocator&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	16	static
+map.hpp:86:17:uavcan::Map<Key, Value>::KVPair* uavcan::Map<Key, Value>::KVGroup::find(const Key&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+map.hpp:60:9:uavcan::Map<Key, Value>::KVGroup::KVGroup() [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+build_config.hpp:244:17:static void uavcan::IsDynamicallyAllocatable<T>::check() [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+transfer_listener.hpp:86:21:uavcan::MultiFrameIncomingTransfer::~MultiFrameIncomingTransfer()	16	static
+transfer_listener.hpp:86:21:virtual uavcan::MultiFrameIncomingTransfer::~MultiFrameIncomingTransfer()	16	static
+transfer_listener.hpp:73:21:uavcan::SingleFrameIncomingTransfer::~SingleFrameIncomingTransfer()	16	static
+transfer_listener.hpp:73:21:virtual uavcan::SingleFrameIncomingTransfer::~SingleFrameIncomingTransfer()	16	static

@@ -1,0 +1,64 @@
+templates.hpp:34:17:static void uavcan::StaticAssert<true>::check()	4	static
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+transfer.hpp:124:5:uavcan::NodeID::NodeID()	16	static
+transfer.hpp:134:10:bool uavcan::NodeID::isValid() const	16	static
+transfer.hpp:139:10:bool uavcan::NodeID::operator==(uavcan::NodeID) const	16	static
+new:168:14:void* operator new(std::size_t, void*)	16	static
+abstract_transfer_buffer.hpp:19:13:uavcan::ITransferBuffer::~ITransferBuffer()	16	static
+abstract_transfer_buffer.hpp:19:13:virtual uavcan::ITransferBuffer::~ITransferBuffer()	16	static
+abstract_transfer_buffer.hpp:16:21:constexpr uavcan::ITransferBuffer::ITransferBuffer()	16	static
+transfer_buffer.hpp:69:5:uavcan::TransferBufferManagerKey::TransferBufferManagerKey()	16	static
+transfer_buffer.hpp:82:10:bool uavcan::TransferBufferManagerKey::operator==(const uavcan::TransferBufferManagerKey&) const	16	static
+transfer_buffer.hpp:87:10:bool uavcan::TransferBufferManagerKey::isEmpty() const	16	static
+linked_list.hpp:44:21:uavcan::LinkedListRoot<uavcan::TransferBufferManagerEntry::Block>::~LinkedListRoot()	16	static
+transfer_buffer.hpp:126:5:uavcan::TransferBufferManagerEntry::TransferBufferManagerEntry(uavcan::IPoolAllocator&, uavcan::uint16_t)	24	static
+transfer_buffer.hpp:136:13:uavcan::TransferBufferManagerEntry::~TransferBufferManagerEntry()	24	static
+transfer_buffer.hpp:136:13:virtual uavcan::TransferBufferManagerEntry::~TransferBufferManagerEntry()	16	static
+transfer_buffer.hpp:146:37:const uavcan::TransferBufferManagerKey& uavcan::TransferBufferManagerEntry::getKey() const	16	static
+transfer_buffer.hpp:147:10:bool uavcan::TransferBufferManagerEntry::isEmpty() const	16	static
+linked_list.hpp:44:21:uavcan::LinkedListRoot<uavcan::TransferBufferManagerEntry>::~LinkedListRoot()	16	static
+uc_transfer_buffer.cpp:14:5:virtual int uavcan::StaticTransferBufferImpl::read(unsigned int, uavcan::uint8_t*, unsigned int) const	24	static
+uc_transfer_buffer.cpp:34:5:virtual int uavcan::StaticTransferBufferImpl::write(unsigned int, const uint8_t*, unsigned int)	32	static
+uc_transfer_buffer.cpp:55:6:void uavcan::StaticTransferBufferImpl::reset()	16	static
+transfer_buffer.hpp:105:12:uavcan::TransferBufferManagerEntry::Block::Block()	16	static
+uc_transfer_buffer.cpp:79:1:static uavcan::TransferBufferManagerEntry::Block* uavcan::TransferBufferManagerEntry::Block::instantiate(uavcan::IPoolAllocator&)	32	static
+transfer_buffer.hpp:105:12:uavcan::TransferBufferManagerEntry::Block::~Block()	16	static
+uc_transfer_buffer.cpp:89:6:static void uavcan::TransferBufferManagerEntry::Block::destroy(uavcan::TransferBufferManagerEntry::Block*&, uavcan::IPoolAllocator&)	16	static
+uc_transfer_buffer.cpp:99:6:void uavcan::TransferBufferManagerEntry::Block::read(uavcan::uint8_t*&, unsigned int, unsigned int&, unsigned int&)	32	static
+uc_transfer_buffer.cpp:113:6:void uavcan::TransferBufferManagerEntry::Block::write(const uint8_t*&, unsigned int, unsigned int&, unsigned int&)	32	static
+uc_transfer_buffer.cpp:130:29:static uavcan::TransferBufferManagerEntry* uavcan::TransferBufferManagerEntry::instantiate(uavcan::IPoolAllocator&, uavcan::uint16_t)	32	static
+uc_transfer_buffer.cpp:141:6:static void uavcan::TransferBufferManagerEntry::destroy(uavcan::TransferBufferManagerEntry*&, uavcan::IPoolAllocator&)	16	static
+uc_transfer_buffer.cpp:151:5:virtual int uavcan::TransferBufferManagerEntry::read(unsigned int, uavcan::uint8_t*, unsigned int) const	48	static
+uc_transfer_buffer.cpp:187:5:virtual int uavcan::TransferBufferManagerEntry::write(unsigned int, const uint8_t*, unsigned int)	64	static
+uc_transfer_buffer.cpp:258:6:void uavcan::TransferBufferManagerEntry::reset(const uavcan::TransferBufferManagerKey&)	24	static
+uc_transfer_buffer.cpp:275:29:uavcan::TransferBufferManagerEntry* uavcan::TransferBufferManager::findFirst(const uavcan::TransferBufferManagerKey&)	24	static
+uc_transfer_buffer.cpp:290:1:uavcan::TransferBufferManager::~TransferBufferManager()	24	static
+uc_transfer_buffer.cpp:302:18:uavcan::ITransferBuffer* uavcan::TransferBufferManager::access(const uavcan::TransferBufferManagerKey&)	16	static
+uc_transfer_buffer.cpp:312:18:uavcan::ITransferBuffer* uavcan::TransferBufferManager::create(const uavcan::TransferBufferManagerKey&)	24	static
+uc_transfer_buffer.cpp:339:6:void uavcan::TransferBufferManager::remove(const uavcan::TransferBufferManagerKey&)	24	static
+uc_transfer_buffer.cpp:352:6:bool uavcan::TransferBufferManager::isEmpty() const	16	static
+uc_transfer_buffer.cpp:357:10:unsigned int uavcan::TransferBufferManager::getNumBuffers() const	16	static
+templates.hpp:238:10:OutputIt uavcan::copy(InputIt, InputIt, OutputIt) [with InputIt = const unsigned char*; OutputIt = unsigned char*]	24	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::TransferBufferManagerEntry]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::TransferBufferManagerEntry]	16	static
+linked_list.hpp:49:5:uavcan::LinkedListRoot<T>::LinkedListRoot() [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+build_config.hpp:244:17:static void uavcan::IsDynamicallyAllocatable<T>::check() [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+build_config.hpp:244:17:static void uavcan::IsDynamicallyAllocatable<T>::check() [with T = uavcan::TransferBufferManagerEntry]	16	static
+templates.hpp:238:10:OutputIt uavcan::copy(InputIt, InputIt, OutputIt) [with InputIt = unsigned char*; OutputIt = unsigned char*]	24	static
+templates.hpp:291:10:const T& uavcan::max(const T&, const T&) [with T = short unsigned int]	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+linked_list.hpp:102:6:void uavcan::LinkedListRoot<T>::insert(T*) [with T = uavcan::TransferBufferManagerEntry::Block]	16	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::TransferBufferManagerEntry::Block]	32	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::TransferBufferManagerEntry]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::TransferBufferManagerEntry]	16	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::TransferBufferManagerEntry]	32	static
+linked_list.hpp:102:6:void uavcan::LinkedListRoot<T>::insert(T*) [with T = uavcan::TransferBufferManagerEntry]	16	static
+linked_list.hpp:89:10:unsigned int uavcan::LinkedListRoot<T>::getLength() const [with T = uavcan::TransferBufferManagerEntry]	24	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::TransferBufferManagerEntry]	16	static
+transfer_buffer.hpp:22:7:uavcan::StaticTransferBufferImpl::~StaticTransferBufferImpl()	16	static
+transfer_buffer.hpp:22:7:virtual uavcan::StaticTransferBufferImpl::~StaticTransferBufferImpl()	16	static

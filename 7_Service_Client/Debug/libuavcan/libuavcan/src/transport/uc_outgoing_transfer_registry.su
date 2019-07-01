@@ -1,0 +1,62 @@
+templates.hpp:34:17:static void uavcan::StaticAssert<true>::check()	4	static
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+new:168:14:void* operator new(std::size_t, void*)	16	static
+transfer.hpp:80:5:uavcan::TransferID::TransferID()	16	static
+transfer.hpp:124:5:uavcan::NodeID::NodeID()	16	static
+transfer.hpp:139:10:bool uavcan::NodeID::operator==(uavcan::NodeID) const	16	static
+data_type.hpp:56:5:uavcan::DataTypeID::DataTypeID()	16	static
+data_type.hpp:71:10:bool uavcan::DataTypeID::operator==(uavcan::DataTypeID) const	16	static
+outgoing_transfer_registry.hpp:26:5:uavcan::OutgoingTransferRegistryKey::OutgoingTransferRegistryKey()	16	static
+outgoing_transfer_registry.hpp:43:16:uavcan::DataTypeID uavcan::OutgoingTransferRegistryKey::getDataTypeID() const	16	static
+outgoing_transfer_registry.hpp:44:18:uavcan::TransferType uavcan::OutgoingTransferRegistryKey::getTransferType() const	16	static
+outgoing_transfer_registry.hpp:46:10:bool uavcan::OutgoingTransferRegistryKey::operator==(const uavcan::OutgoingTransferRegistryKey&) const	16	static
+time.hpp:184:21:uavcan::MonotonicTime::~MonotonicTime()	16	static
+outgoing_transfer_registry.hpp:77:18:uavcan::OutgoingTransferRegistry::DeadlineExpiredPredicate::DeadlineExpiredPredicate(uavcan::MonotonicTime)	16	static
+outgoing_transfer_registry.hpp:81:14:bool uavcan::OutgoingTransferRegistry::DeadlineExpiredPredicate::operator()(const uavcan::OutgoingTransferRegistryKey&, const uavcan::OutgoingTransferRegistry::Value&) const	32	static
+outgoing_transfer_registry.hpp:101:9:uavcan::OutgoingTransferRegistry::ExistenceCheckingPredicate::ExistenceCheckingPredicate(uavcan::DataTypeID, uavcan::TransferType)	24	static
+outgoing_transfer_registry.hpp:106:14:bool uavcan::OutgoingTransferRegistry::ExistenceCheckingPredicate::operator()(const uavcan::OutgoingTransferRegistryKey&, const uavcan::OutgoingTransferRegistry::Value&) const	32	static
+time.hpp:182:21:uavcan::MonotonicDuration::~MonotonicDuration()	16	static
+time.hpp:184:21:uavcan::MonotonicTime::MonotonicTime()	16	static
+outgoing_transfer_registry.hpp:66:12:uavcan::OutgoingTransferRegistry::Value::Value()	16	static
+outgoing_transfer_registry.hpp:66:12:uavcan::OutgoingTransferRegistry::Value::~Value()	16	static
+uc_outgoing_transfer_registry.cpp:27:13:uavcan::TransferID* uavcan::OutgoingTransferRegistry::accessOrCreate(const uavcan::OutgoingTransferRegistryKey&, uavcan::MonotonicTime)	56	static
+uc_outgoing_transfer_registry.cpp:45:6:bool uavcan::OutgoingTransferRegistry::exists(uavcan::DataTypeID, uavcan::TransferType) const	40	static
+outgoing_transfer_registry.hpp:72:11:uavcan::OutgoingTransferRegistry::DeadlineExpiredPredicate::~DeadlineExpiredPredicate()	16	static
+uc_outgoing_transfer_registry.cpp:50:6:void uavcan::OutgoingTransferRegistry::cleanup(uavcan::MonotonicTime)	40	static
+time.hpp:100:5:uavcan::TimeBase<T, D>::~TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:123:10:bool uavcan::TimeBase<T, D>::isZero() const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:130:10:bool uavcan::TimeBase<T, D>::operator<=(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:41:14:static D uavcan::DurationBase<D>::fromMSec(uavcan::int64_t) [with D = uavcan::MonotonicDuration]	40	static
+time.hpp:24:5:uavcan::DurationBase<D>::~DurationBase() [with D = uavcan::MonotonicDuration]	16	static
+map.hpp:225:8:Value* uavcan::Map<Key, Value>::access(const Key&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	32	static
+time.hpp:102:5:uavcan::TimeBase<T, D>::TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	24	static
+map.hpp:36:12:uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVPair::~KVPair()	16	static
+map.hpp:233:8:Value* uavcan::Map<Key, Value>::insert(const Key&, const Value&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	104	static
+map.hpp:302:12:const Key* uavcan::Map<Key, Value>::find(Predicate) const [with Predicate = uavcan::OutgoingTransferRegistry::ExistenceCheckingPredicate; Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	48	static
+map.hpp:269:6:void uavcan::Map<Key, Value>::removeAllWhere(Predicate) [with Predicate = uavcan::OutgoingTransferRegistry::DeadlineExpiredPredicate; Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	80	static
+time.hpp:182:21:uavcan::MonotonicDuration::MonotonicDuration()	16	static
+time.hpp:35:14:static D uavcan::DurationBase<D>::fromUSec(uavcan::int64_t) [with D = uavcan::MonotonicDuration]	32	static
+map.hpp:184:35:uavcan::Map<Key, Value>::KVPair* uavcan::Map<Key, Value>::findKey(const Key&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	24	static
+map.hpp:256:6:void uavcan::Map<Key, Value>::remove(const Key&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	64	static
+map.hpp:46:9:uavcan::Map<Key, Value>::KVPair::KVPair(const Key&, const Value&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	24	static
+map.hpp:66:25:static uavcan::Map<Key, Value>::KVGroup* uavcan::Map<Key, Value>::KVGroup::instantiate(uavcan::IPoolAllocator&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	32	static
+linked_list.hpp:102:6:void uavcan::LinkedListRoot<T>::insert(T*) [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+map.hpp:51:14:bool uavcan::Map<Key, Value>::KVPair::match(const Key&) const [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	16	static
+map.hpp:41:9:uavcan::Map<Key, Value>::KVPair::KVPair() [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	24	static
+map.hpp:200:6:void uavcan::Map<Key, Value>::compact() [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	48	static
+time.hpp:26:5:uavcan::DurationBase<D>::DurationBase() [with D = uavcan::MonotonicDuration]	24	static
+map.hpp:86:17:uavcan::Map<Key, Value>::KVPair* uavcan::Map<Key, Value>::KVGroup::find(const Key&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	24	static
+map.hpp:60:9:uavcan::Map<Key, Value>::KVGroup::KVGroup() [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	24	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	32	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+map.hpp:55:12:uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup::~KVGroup()	24	static
+map.hpp:76:21:static void uavcan::Map<Key, Value>::KVGroup::destroy(uavcan::Map<Key, Value>::KVGroup*&, uavcan::IPoolAllocator&) [with Key = uavcan::OutgoingTransferRegistryKey; Value = uavcan::OutgoingTransferRegistry::Value]	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+build_config.hpp:244:17:static void uavcan::IsDynamicallyAllocatable<T>::check() [with T = uavcan::Map<uavcan::OutgoingTransferRegistryKey, uavcan::OutgoingTransferRegistry::Value>::KVGroup]	16	static
+uc_outgoing_transfer_registry.cpp:55:1:void __static_initialization_and_destruction_0(int, int)	16	static
+uc_outgoing_transfer_registry.cpp:55:1:cpp)	8	static
+uc_outgoing_transfer_registry.cpp:55:1:cpp)	8	static

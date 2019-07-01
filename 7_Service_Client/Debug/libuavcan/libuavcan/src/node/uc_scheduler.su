@@ -1,0 +1,54 @@
+templates.hpp:34:17:static void uavcan::StaticAssert<true>::check()	4	static
+templates.hpp:448:31:static long long unsigned int uavcan::NumericTraits<long long unsigned int>::max()	8	static
+time.hpp:184:21:uavcan::MonotonicTime::MonotonicTime()	16	static
+time.hpp:184:21:uavcan::MonotonicTime::~MonotonicTime()	16	static
+time.hpp:182:21:uavcan::MonotonicDuration::~MonotonicDuration()	16	static
+dispatcher.hpp:230:25:const uavcan::ISystemClock& uavcan::Dispatcher::getSystemClock() const	16	static
+dispatcher.hpp:231:19:uavcan::ISystemClock& uavcan::Dispatcher::getSystemClock()	16	static
+scheduler.hpp:41:19:uavcan::MonotonicTime uavcan::DeadlineHandler::getDeadline() const	16	static
+scheduler.hpp:83:9:uavcan::Scheduler::InsideSpinSetter::InsideSpinSetter(uavcan::Scheduler&)	16	static
+scheduler.hpp:88:9:uavcan::Scheduler::InsideSpinSetter::~InsideSpinSetter()	16	static
+scheduler.hpp:117:24:uavcan::DeadlineScheduler& uavcan::Scheduler::getDeadlineScheduler()	16	static
+scheduler.hpp:122:19:uavcan::ISystemClock& uavcan::Scheduler::getSystemClock()	16	static
+scheduler.hpp:123:19:uavcan::MonotonicTime uavcan::Scheduler::getMonotonicTime() const	16	static
+uc_scheduler.cpp:14:6:void uavcan::DeadlineHandler::startWithDeadline(uavcan::MonotonicTime)	16	static
+uc_scheduler.cpp:22:6:void uavcan::DeadlineHandler::startWithDelay(uavcan::MonotonicDuration)	32	static
+uc_scheduler.cpp:27:6:void uavcan::DeadlineHandler::stop()	16	static
+uc_scheduler.cpp:32:6:bool uavcan::DeadlineHandler::isRunning() const	16	static
+uc_scheduler.cpp:43:14:uavcan::MonotonicDeadlineHandlerInsertionComparator::MonotonicDeadlineHandlerInsertionComparator(uavcan::MonotonicTime)	16	static
+uc_scheduler.cpp:44:10:bool uavcan::MonotonicDeadlineHandlerInsertionComparator::operator()(const uavcan::DeadlineHandler*) const	32	static
+uc_scheduler.cpp:40:8:uavcan::MonotonicDeadlineHandlerInsertionComparator::~MonotonicDeadlineHandlerInsertionComparator()	16	static
+uc_scheduler.cpp:50:6:void uavcan::DeadlineScheduler::add(uavcan::DeadlineHandler*)	40	static
+uc_scheduler.cpp:56:6:void uavcan::DeadlineScheduler::remove(uavcan::DeadlineHandler*)	16	static
+uc_scheduler.cpp:62:6:bool uavcan::DeadlineScheduler::doesExist(const uavcan::DeadlineHandler*) const	24	static
+uc_scheduler.cpp:87:15:uavcan::MonotonicTime uavcan::DeadlineScheduler::pollAndGetMonotonicTime(uavcan::ISystemClock&)	64	static
+uc_scheduler.cpp:116:15:uavcan::MonotonicTime uavcan::DeadlineScheduler::getEarliestDeadline() const	24	static
+uc_scheduler.cpp:129:15:uavcan::MonotonicTime uavcan::Scheduler::computeDispatcherSpinDeadline(uavcan::MonotonicTime) const	64	static
+uc_scheduler.cpp:143:6:void uavcan::Scheduler::pollCleanup(uavcan::MonotonicTime, uavcan::uint32_t)	56	static
+uc_scheduler.cpp:155:5:int uavcan::Scheduler::spin(uavcan::MonotonicTime)	80	static
+uc_scheduler.cpp:186:5:int uavcan::Scheduler::spinOnce()	56	static
+time.hpp:102:5:uavcan::TimeBase<T, D>::TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	24	static
+time.hpp:100:5:uavcan::TimeBase<T, D>::~TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:129:10:bool uavcan::TimeBase<T, D>::operator>(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:24:5:uavcan::DurationBase<D>::~DurationBase() [with D = uavcan::MonotonicDuration]	16	static
+time.hpp:123:10:bool uavcan::TimeBase<T, D>::isZero() const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:112:14:static T uavcan::TimeBase<T, D>::fromUSec(uavcan::uint64_t) [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	32	static
+time.hpp:133:7:T uavcan::TimeBase<T, D>::operator+(const D&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	48	static
+linked_list.hpp:116:6:void uavcan::LinkedListRoot<T>::insertBefore(T*, Predicate) [with Predicate = uavcan::MonotonicDeadlineHandlerInsertionComparator; T = uavcan::DeadlineHandler]	40	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::DeadlineHandler]	32	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::DeadlineHandler]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::DeadlineHandler]	16	static
+time.hpp:128:10:bool uavcan::TimeBase<T, D>::operator<(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:110:14:static T uavcan::TimeBase<T, D>::getMax() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	24	static
+templates.hpp:281:10:const T& uavcan::min(const T&, const T&) [with T = uavcan::MonotonicTime]	16	static
+time.hpp:156:7:D uavcan::TimeBase<T, D>::operator-(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	32	static
+time.hpp:56:10:bool uavcan::DurationBase<D>::operator>(const D&) const [with D = uavcan::MonotonicDuration]	16	static
+time.hpp:77:7:D uavcan::DurationBase<D>::operator*(Scale) const [with Scale = long unsigned int; D = uavcan::MonotonicDuration]	32	static
+time.hpp:131:10:bool uavcan::TimeBase<T, D>::operator>=(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+time.hpp:182:21:uavcan::MonotonicDuration::MonotonicDuration()	16	static
+time.hpp:35:14:static D uavcan::DurationBase<D>::fromUSec(uavcan::int64_t) [with D = uavcan::MonotonicDuration]	32	static
+time.hpp:49:10:bool uavcan::DurationBase<D>::isNegative() const [with D = uavcan::MonotonicDuration]	16	static
+time.hpp:46:7:D uavcan::DurationBase<D>::getAbs() const [with D = uavcan::MonotonicDuration]	24	static
+time.hpp:43:13:uavcan::int64_t uavcan::DurationBase<D>::toUSec() const [with D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::DeadlineHandler]	16	static
+time.hpp:26:5:uavcan::DurationBase<D>::DurationBase() [with D = uavcan::MonotonicDuration]	24	static

@@ -1,0 +1,1 @@
+uc_can.cpp:19:6:bool uavcan::CanFrame::priorityHigherThan(const uavcan::CanFrame&) const	40	static

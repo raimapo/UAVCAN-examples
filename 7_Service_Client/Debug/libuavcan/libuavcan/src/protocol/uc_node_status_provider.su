@@ -1,0 +1,330 @@
+templates.hpp:34:17:static void uavcan::StaticAssert<true>::check()	4	static
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+templates.hpp:376:26:static unsigned char uavcan::NumericTraits<unsigned char>::max()	4	static
+templates.hpp:377:26:static unsigned char uavcan::NumericTraits<unsigned char>::min()	4	static
+templates.hpp:394:27:static short unsigned int uavcan::NumericTraits<short unsigned int>::max()	4	static
+templates.hpp:395:27:static short unsigned int uavcan::NumericTraits<short unsigned int>::min()	4	static
+templates.hpp:430:26:static long unsigned int uavcan::NumericTraits<long unsigned int>::max()	4	static
+templates.hpp:431:26:static long unsigned int uavcan::NumericTraits<long unsigned int>::min()	4	static
+templates.hpp:448:31:static long long unsigned int uavcan::NumericTraits<long long unsigned int>::max()	8	static
+templates.hpp:449:31:static long long unsigned int uavcan::NumericTraits<long long unsigned int>::min()	8	static
+new:168:14:void* operator new(std::size_t, void*)	16	static
+perf_counter.hpp:52:10:void uavcan::TransferPerfCounter::addError()	16	static
+transfer.hpp:44:5:uavcan::TransferPriority::TransferPriority()	16	static
+transfer.hpp:80:5:uavcan::TransferID::TransferID()	16	static
+transfer.hpp:124:5:uavcan::NodeID::NodeID()	16	static
+transfer.hpp:134:10:bool uavcan::NodeID::isValid() const	16	static
+transfer.hpp:136:10:bool uavcan::NodeID::isUnicast() const	16	static
+transfer.hpp:139:10:bool uavcan::NodeID::operator==(uavcan::NodeID) const	16	static
+data_type.hpp:56:5:uavcan::DataTypeID::DataTypeID()	16	static
+data_type.hpp:58:5:uavcan::DataTypeID::DataTypeID(uavcan::uint16_t)	16	static
+data_type.hpp:114:5:uavcan::DataTypeSignature::DataTypeSignature()	16	static
+data_type.hpp:115:14:uavcan::DataTypeSignature::DataTypeSignature(uavcan::uint64_t)	24	static
+data_type.hpp:140:5:uavcan::DataTypeDescriptor::DataTypeDescriptor()	16	static
+data_type.hpp:145:5:uavcan::DataTypeDescriptor::DataTypeDescriptor(uavcan::DataTypeKind, uavcan::DataTypeID, const uavcan::DataTypeSignature&, const char*)	32	static
+data_type.hpp:160:30:const uavcan::DataTypeSignature& uavcan::DataTypeDescriptor::getSignature() const	16	static
+global_data_type_registry.hpp:41:9:uavcan::GlobalDataTypeRegistry::Entry::Entry()	16	static
+global_data_type_registry.hpp:119:10:bool uavcan::GlobalDataTypeRegistry::isFrozen() const	16	static
+abstract_transfer_buffer.hpp:19:13:uavcan::ITransferBuffer::~ITransferBuffer()	16	static
+abstract_transfer_buffer.hpp:19:13:virtual uavcan::ITransferBuffer::~ITransferBuffer()	16	static
+bit_stream.hpp:64:14:uavcan::BitStream::BitStream(uavcan::ITransferBuffer&)	16	static
+scalar_codec.hpp:90:14:uavcan::ScalarCodec::ScalarCodec(uavcan::BitStream&)	16	static
+time.hpp:184:21:uavcan::MonotonicTime::MonotonicTime()	16	static
+time.hpp:184:21:uavcan::MonotonicTime::~MonotonicTime()	16	static
+abstract_transfer_buffer.hpp:16:21:constexpr uavcan::ITransferBuffer::ITransferBuffer()	16	static
+transfer_buffer.hpp:29:5:uavcan::StaticTransferBufferImpl::StaticTransferBufferImpl(uavcan::uint8_t*, uavcan::uint16_t)	24	static
+transfer_buffer.hpp:69:5:uavcan::TransferBufferManagerKey::TransferBufferManagerKey()	16	static
+transfer_buffer.hpp:82:10:bool uavcan::TransferBufferManagerKey::operator==(const uavcan::TransferBufferManagerKey&) const	16	static
+transfer_buffer.hpp:87:10:bool uavcan::TransferBufferManagerKey::isEmpty() const	16	static
+transfer_buffer.hpp:162:5:uavcan::TransferBufferManager::TransferBufferManager(uavcan::uint16_t, uavcan::IPoolAllocator&)	24	static
+time.hpp:182:21:uavcan::MonotonicDuration::~MonotonicDuration()	16	static
+transfer_listener.hpp:63:22:uavcan::TransferPriority uavcan::IncomingTransfer::getPriority() const	16	static
+transfer_listener.hpp:64:18:uavcan::TransferType uavcan::IncomingTransfer::getTransferType() const	16	static
+transfer_listener.hpp:65:16:uavcan::TransferID uavcan::IncomingTransfer::getTransferID() const	16	static
+transfer_listener.hpp:66:12:uavcan::NodeID uavcan::IncomingTransfer::getSrcNodeID() const	16	static
+transfer_listener.hpp:131:5:uavcan::TransferListener::TransferListener(uavcan::TransferPerfCounter&, const uavcan::DataTypeDescriptor&, uavcan::uint16_t, uavcan::IPoolAllocator&)	32	static
+dispatcher.hpp:222:12:uavcan::NodeID uavcan::Dispatcher::getNodeID() const	16	static
+dispatcher.hpp:228:10:bool uavcan::Dispatcher::isPassiveMode() const	24	static
+dispatcher.hpp:230:25:const uavcan::ISystemClock& uavcan::Dispatcher::getSystemClock() const	16	static
+dispatcher.hpp:237:26:uavcan::TransferPerfCounter& uavcan::Dispatcher::getTransferPerfCounter()	16	static
+scheduler.hpp:28:13:uavcan::DeadlineHandler::~DeadlineHandler()	16	static
+scheduler.hpp:28:13:virtual uavcan::DeadlineHandler::~DeadlineHandler()	16	static
+scheduler.hpp:119:17:uavcan::Dispatcher& uavcan::Scheduler::getDispatcher()	16	static
+scheduler.hpp:120:23:const uavcan::Dispatcher& uavcan::Scheduler::getDispatcher() const	16	static
+scheduler.hpp:123:19:uavcan::MonotonicTime uavcan::Scheduler::getMonotonicTime() const	16	static
+abstract_node.hpp:28:17:uavcan::Dispatcher& uavcan::INode::getDispatcher()	16	static
+abstract_node.hpp:32:19:uavcan::MonotonicTime uavcan::INode::getMonotonicTime() const	16	static
+abstract_node.hpp:57:10:bool uavcan::INode::isPassiveMode() const	16	static
+transfer_sender.hpp:82:10:void uavcan::TransferSender::setPriority(uavcan::TransferPriority)	16	static
+transfer_sender.hpp:20:21:uavcan::TransferSender::~TransferSender()	16	static
+generic_publisher.hpp:40:5:uavcan::GenericPublisherBase::~GenericPublisherBase()	16	static
+generic_publisher.hpp:74:10:void uavcan::GenericPublisherBase::setPriority(uavcan::TransferPriority)	16	static
+generic_publisher.hpp:76:12:uavcan::INode& uavcan::GenericPublisherBase::getNode() const	16	static
+generic_subscriber.hpp:106:5:uavcan::GenericSubscriberBase::~GenericSubscriberBase()	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+timer.hpp:77:23:uavcan::MonotonicDuration uavcan::TimerBase::getPeriod() const	16	static
+GetNodeInfo.hpp:217:24:static const char* uavcan::protocol::GetNodeInfo_::getDataTypeFullName()	4	static
+GetNodeInfo.hpp:350:36:static uavcan::DataTypeSignature uavcan::protocol::GetNodeInfo_::getDataTypeSignature()	16	static
+node_status_provider.hpp:66:12:uavcan::INode& uavcan::NodeStatusProvider::getNode()	16	static
+timer.hpp:46:21:uavcan::TimerBase::~TimerBase()	16	static
+timer.hpp:46:21:virtual uavcan::TimerBase::~TimerBase()	16	static
+publisher.hpp:18:21:uavcan::Publisher<uavcan::protocol::NodeStatus_<0> >::~Publisher()	16	static
+array.hpp:424:21:uavcan::Array<uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>, (uavcan::ArrayMode)0, 16>::~Array()	16	static
+array.hpp:424:21:uavcan::Array<uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>, (uavcan::ArrayMode)1, 255>::~Array()	16	static
+HardwareVersion.hpp:61:22:uavcan::protocol::HardwareVersion_<0>::~HardwareVersion_()	16	static
+array.hpp:424:21:uavcan::Array<uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>, (uavcan::ArrayMode)1, 80>::~Array()	16	static
+GetNodeInfo.hpp:130:12:uavcan::protocol::GetNodeInfo_::Response_<0>::~Response_()	16	static
+uc_node_status_provider.cpp:12:6:bool uavcan::NodeStatusProvider::isNodeInfoInitialized() const	16	static
+uc_node_status_provider.cpp:18:5:int uavcan::NodeStatusProvider::publish()	40	static
+uc_node_status_provider.cpp:29:6:virtual void uavcan::NodeStatusProvider::handleTimerEvent(const uavcan::TimerEvent&)	24	static
+uc_node_status_provider.cpp:50:6:void uavcan::NodeStatusProvider::handleGetNodeInfoRequest(const Request&, uavcan::protocol::GetNodeInfo_::Response&)	24	static
+uc_node_status_provider.cpp:58:5:int uavcan::NodeStatusProvider::startAndPublish(uavcan::TransferPriority)	64	static
+uc_node_status_provider.cpp:96:6:void uavcan::NodeStatusProvider::setStatusPublicationPeriod(uavcan::MonotonicDuration)	72	static
+uc_node_status_provider.cpp:112:27:uavcan::MonotonicDuration uavcan::NodeStatusProvider::getStatusPublicationPeriod() const	16	static
+uc_node_status_provider.cpp:117:6:void uavcan::NodeStatusProvider::setAdHocNodeStatusUpdater(uavcan::IAdHocNodeStatusUpdater*)	16	static
+uc_node_status_provider.cpp:122:6:void uavcan::NodeStatusProvider::setHealth(uavcan::uint8_t)	16	static
+uc_node_status_provider.cpp:127:6:void uavcan::NodeStatusProvider::setMode(uavcan::uint8_t)	16	static
+uc_node_status_provider.cpp:132:6:void uavcan::NodeStatusProvider::setVendorSpecificStatusCode(uavcan::NodeStatusProvider::VendorSpecificStatusCode)	16	static
+uc_node_status_provider.cpp:137:6:void uavcan::NodeStatusProvider::setName(const NodeName&)	16	static
+uc_node_status_provider.cpp:145:6:void uavcan::NodeStatusProvider::setSoftwareVersion(const SoftwareVersion&)	40	static
+uc_node_status_provider.cpp:153:6:void uavcan::NodeStatusProvider::setHardwareVersion(const HardwareVersion&)	304	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::GlobalDataTypeRegistry::Entry]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::GlobalDataTypeRegistry::Entry]	16	static
+templates.hpp:254:6:void uavcan::fill(ForwardIt, ForwardIt, const T&) [with ForwardIt = unsigned char*; T = unsigned char]	24	static
+time.hpp:102:5:uavcan::TimeBase<T, D>::TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	24	static
+time.hpp:100:5:uavcan::TimeBase<T, D>::~TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:49:5:uavcan::LinkedListRoot<T>::LinkedListRoot() [with T = uavcan::TransferBufferManagerEntry]	16	static
+time.hpp:41:14:static D uavcan::DurationBase<D>::fromMSec(uavcan::int64_t) [with D = uavcan::MonotonicDuration]	40	static
+time.hpp:24:5:uavcan::DurationBase<D>::~DurationBase() [with D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::TransferListener]	16	static
+map.hpp:112:5:uavcan::Map<Key, Value>::Map(uavcan::IPoolAllocator&) [with Key = uavcan::TransferBufferManagerKey; Value = uavcan::TransferReceiver]	24	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::DeadlineHandler]	16	static
+templates.hpp:281:10:const T& uavcan::min(const T&, const T&) [with T = uavcan::MonotonicDuration]	16	static
+templates.hpp:291:10:const T& uavcan::max(const T&, const T&) [with T = uavcan::MonotonicDuration]	16	static
+time.hpp:182:21:uavcan::MonotonicDuration::MonotonicDuration()	16	static
+time.hpp:35:14:static D uavcan::DurationBase<D>::fromUSec(uavcan::int64_t) [with D = uavcan::MonotonicDuration]	32	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::NodeStatus_<0>]	32	static
+NodeStatus.hpp:226:17:static void uavcan::protocol::NodeStatus_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+SoftwareVersion.hpp:182:17:static void uavcan::protocol::SoftwareVersion_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+HardwareVersion.hpp:148:17:static void uavcan::protocol::HardwareVersion_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	16	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::GetNodeInfo_]	32	static
+generic_publisher.hpp:118:5:uavcan::GenericPublisher<DataSpec, DataStruct>::~GenericPublisher() [with DataSpec = uavcan::protocol::NodeStatus_<0>; DataStruct = uavcan::protocol::NodeStatus_<0>]	16	static
+GetNodeInfo.hpp:173:9:uavcan::protocol::GetNodeInfo_::Response_<_tmpl>::Response_() [with int _tmpl = 0]	16	static
+array.hpp:306:5:uavcan::ArrayImpl<T, ArrayMode, MaxSize>::~ArrayImpl() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize = 16]	16	static
+array.hpp:306:5:uavcan::ArrayImpl<T, ArrayMode, MaxSize>::~ArrayImpl() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 255]	16	static
+array.hpp:306:5:uavcan::ArrayImpl<T, ArrayMode, MaxSize>::~ArrayImpl() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 80]	16	static
+array.hpp:712:10:bool uavcan::Array<T, ArrayMode, MaxSize_>::empty() const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	16	static
+time.hpp:156:7:D uavcan::TimeBase<T, D>::operator-(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	32	static
+time.hpp:48:10:bool uavcan::DurationBase<D>::isPositive() const [with D = uavcan::MonotonicDuration]	16	static
+time.hpp:44:13:uavcan::int64_t uavcan::DurationBase<D>::toMSec() const [with D = uavcan::MonotonicDuration]	24	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+publisher.hpp:52:9:int uavcan::Publisher<DataType_>::broadcast(const DataType&) [with DataType_ = uavcan::protocol::NodeStatus_<0>]	40	static
+method_binder.hpp:39:5:uavcan::MethodBinder<ObjectPtr, MemFunPtr>::MethodBinder(ObjectPtr, MemFunPtr) [with ObjectPtr = uavcan::NodeStatusProvider*; MemFunPtr = void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)]	24	static
+service_server.hpp:158:9:int uavcan::ServiceServer<DataType_, Callback_>::start(const Callback&) [with DataType_ = uavcan::protocol::GetNodeInfo_; Callback_ = uavcan::MethodBinder<uavcan::NodeStatusProvider*, void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)>]	24	static
+generic_subscriber.hpp:213:10:void uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::stop() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	24	static
+time.hpp:43:13:uavcan::int64_t uavcan::DurationBase<D>::toUSec() const [with D = uavcan::MonotonicDuration]	16	static
+time.hpp:61:7:D uavcan::DurationBase<D>::operator-(const D&) const [with D = uavcan::MonotonicDuration]	32	static
+SoftwareVersion.hpp:137:5:uavcan::protocol::SoftwareVersion_<_tmpl>::SoftwareVersion_() [with int _tmpl = 0]	24	static
+SoftwareVersion.hpp:196:6:bool uavcan::protocol::SoftwareVersion_<_tmpl>::operator==(uavcan::protocol::SoftwareVersion_<_tmpl>::ParameterType) const [with int _tmpl = 0]	16	static
+HardwareVersion.hpp:104:5:uavcan::protocol::HardwareVersion_<_tmpl>::HardwareVersion_() [with int _tmpl = 0]	16	static
+HardwareVersion.hpp:162:6:bool uavcan::protocol::HardwareVersion_<_tmpl>::operator==(uavcan::protocol::HardwareVersion_<_tmpl>::ParameterType) const [with int _tmpl = 0]	16	static
+linked_list.hpp:49:5:uavcan::LinkedListRoot<T>::LinkedListRoot() [with T = uavcan::Map<uavcan::TransferBufferManagerKey, uavcan::TransferReceiver>::KVGroup]	16	static
+time.hpp:55:10:bool uavcan::DurationBase<D>::operator<(const D&) const [with D = uavcan::MonotonicDuration]	16	static
+time.hpp:26:5:uavcan::DurationBase<D>::DurationBase() [with D = uavcan::MonotonicDuration]	24	static
+global_data_type_registry.hpp:37:12:uavcan::GlobalDataTypeRegistry::Entry::~Entry()	16	static
+global_data_type_registry.hpp:215:18:void __tcf_0()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::NodeStatus_<0>]	72	static
+NodeStatus.hpp:329:29:static uavcan::DataTypeSignature uavcan::protocol::NodeStatus_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+SoftwareVersion.hpp:285:29:static uavcan::DataTypeSignature uavcan::protocol::SoftwareVersion_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+HardwareVersion.hpp:239:29:static uavcan::DataTypeSignature uavcan::protocol::HardwareVersion_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+global_data_type_registry.hpp:215:18:void __tcf_1()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::GetNodeInfo_]	72	static
+generic_subscriber.hpp:176:13:uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::~GenericSubscriber() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	16	static
+generic_subscriber.hpp:176:13:uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::~GenericSubscriber() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	16	static
+generic_publisher.hpp:118:5:uavcan::GenericPublisher<DataSpec, DataStruct>::~GenericPublisher() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Response_<0>]	16	static
+NodeStatus.hpp:181:5:uavcan::protocol::NodeStatus_<_tmpl>::NodeStatus_() [with int _tmpl = 0]	16	static
+array.hpp:686:5:uavcan::Array<T, ArrayMode, MaxSize_>::Array() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	16	static
+array.hpp:187:5:uavcan::StaticArrayBase<Size>::~StaticArrayBase() [with unsigned int Size = 16]	16	static
+array.hpp:219:5:uavcan::DynamicArrayBase<MaxSize>::~DynamicArrayBase() [with unsigned int MaxSize = 255]	16	static
+array.hpp:219:5:uavcan::DynamicArrayBase<MaxSize>::~DynamicArrayBase() [with unsigned int MaxSize = 80]	16	static
+array.hpp:258:14:uavcan::DynamicArrayBase<MaxSize>::SizeType uavcan::DynamicArrayBase<MaxSize>::size() const [with unsigned int MaxSize = 80]	16	static
+integer_spec.hpp:48:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImplGeneric::max() [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+generic_publisher.hpp:138:9:int uavcan::GenericPublisher<DataSpec, DataStruct>::publish(const DataStruct&, uavcan::TransferType, uavcan::NodeID, uavcan::MonotonicTime) [with DataSpec = uavcan::protocol::NodeStatus_<0>; DataStruct = uavcan::protocol::NodeStatus_<0>]	48	static
+templates.hpp:172:4:To uavcan::coerceOrFallback(const From&, const To&) [with To = bool; From = uavcan::MethodBinder<uavcan::NodeStatusProvider*, void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)>]	24	static
+generic_publisher.hpp:124:9:int uavcan::GenericPublisher<DataSpec, DataStruct>::init() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Response_<0>]	16	static
+generic_subscriber.hpp:186:9:int uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::startAsServiceRequestListener() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	24	static
+lazy_constructor.hpp:92:5:uavcan::LazyConstructor<T>::operator T*() const [with T = uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder]	16	static
+array.hpp:686:5:uavcan::Array<T, ArrayMode, MaxSize_>::Array() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize_ = 16]	16	static
+array.hpp:686:5:uavcan::Array<T, ArrayMode, MaxSize_>::Array() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	16	static
+array.hpp:766:5:typename uavcan::EnableIf<(sizeof (reinterpret_cast<const R*>(0)->size()) && sizeof ((* reinterpret_cast<const R*>(0))[0])), bool>::Type uavcan::Array<T, ArrayMode, MaxSize_>::operator==(const R&) const [with R = uavcan::Array<uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>, (uavcan::ArrayMode)0, 16>; T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize_ = 16]	32	static
+array.hpp:766:5:typename uavcan::EnableIf<(sizeof (reinterpret_cast<const R*>(0)->size()) && sizeof ((* reinterpret_cast<const R*>(0))[0])), bool>::Type uavcan::Array<T, ArrayMode, MaxSize_>::operator==(const R&) const [with R = uavcan::Array<uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>, (uavcan::ArrayMode)1, 255>; T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	32	static
+NodeStatus.hpp:221:24:static const char* uavcan::protocol::NodeStatus_<_tmpl>::getDataTypeFullName() [with int _tmpl = 0]	4	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize_ = 16]	16	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	16	static
+lazy_constructor.hpp:78:5:uavcan::LazyConstructor<T>::~LazyConstructor() [with T = uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder]	16	static
+array.hpp:315:5:uavcan::ArrayImpl<T, ArrayMode, MaxSize>::ArrayImpl() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 80]	16	static
+transfer_buffer.hpp:22:7:uavcan::StaticTransferBufferImpl::~StaticTransferBufferImpl()	16	static
+transfer_buffer.hpp:22:7:virtual uavcan::StaticTransferBufferImpl::~StaticTransferBufferImpl()	16	static
+transfer_buffer.hpp:50:21:uavcan::StaticTransferBuffer<7>::~StaticTransferBuffer()	16	static
+transfer_buffer.hpp:50:21:virtual uavcan::StaticTransferBuffer<7>::~StaticTransferBuffer()	16	static
+generic_publisher.hpp:178:5:int uavcan::GenericPublisher<DataSpec, DataStruct>::genericPublish(const DataStruct&, uavcan::TransferType, uavcan::NodeID, uavcan::TransferID*, uavcan::MonotonicTime) [with DataSpec = uavcan::protocol::NodeStatus_<0>; DataStruct = uavcan::protocol::NodeStatus_<0>]	80	static
+templates.hpp:162:15:static To uavcan::CoerceOrFallbackImpl<From, To>::impl(const From&, const To&, uavcan::TrueType) [with From = uavcan::MethodBinder<uavcan::NodeStatusProvider*, void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)>; To = bool]	24	static
+generic_publisher.hpp:154:5:int uavcan::GenericPublisher<DataSpec, DataStruct>::checkInit() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Response_<0>]	24	static
+generic_subscriber.hpp:284:5:int uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::genericStart(bool (uavcan::Dispatcher::*)(uavcan::TransferListener*)) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	40	static
+array.hpp:315:5:uavcan::ArrayImpl<T, ArrayMode, MaxSize>::ArrayImpl() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize = 16]	16	static
+array.hpp:315:5:uavcan::ArrayImpl<T, ArrayMode, MaxSize>::ArrayImpl() [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 255]	16	static
+array.hpp:182:14:uavcan::StaticArrayBase<Size>::SizeType uavcan::StaticArrayBase<Size>::size() const [with unsigned int Size = 16]	16	static
+array.hpp:338:22:const ValueType& uavcan::ArrayImpl<T, ArrayMode, MaxSize>::at(uavcan::ArrayImpl<T, ArrayMode, MaxSize>::SizeType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize = 16]	16	static
+array.hpp:344:22:const ValueType& uavcan::ArrayImpl<T, ArrayMode, MaxSize>::operator[](uavcan::ArrayImpl<T, ArrayMode, MaxSize>::SizeType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize = 16]	16	static
+array.hpp:258:14:uavcan::DynamicArrayBase<MaxSize>::SizeType uavcan::DynamicArrayBase<MaxSize>::size() const [with unsigned int MaxSize = 255]	16	static
+array.hpp:338:22:const ValueType& uavcan::ArrayImpl<T, ArrayMode, MaxSize>::at(uavcan::ArrayImpl<T, ArrayMode, MaxSize>::SizeType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 255]	16	static
+array.hpp:344:22:const ValueType& uavcan::ArrayImpl<T, ArrayMode, MaxSize>::operator[](uavcan::ArrayImpl<T, ArrayMode, MaxSize>::SizeType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 255]	16	static
+generic_subscriber.hpp:133:11:uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder::~TransferForwarder()	16	static
+generic_subscriber.hpp:133:11:virtual uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder::~TransferForwarder()	16	static
+lazy_constructor.hpp:100:10:void uavcan::LazyConstructor<T>::destroy() [with T = uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder]	24	static
+array.hpp:218:5:uavcan::DynamicArrayBase<MaxSize>::DynamicArrayBase() [with unsigned int MaxSize = 80]	16	static
+array.hpp:296:50:typename uavcan::EnableIf<(sizeof (((U)(0) >= U())) != 0)>::Type uavcan::ArrayImpl<T, ArrayMode, MaxSize>::initialize(int) [with U = unsigned char; T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 80]	24	static
+generic_publisher.hpp:154:5:int uavcan::GenericPublisher<DataSpec, DataStruct>::checkInit() [with DataSpec = uavcan::protocol::NodeStatus_<0>; DataStruct = uavcan::protocol::NodeStatus_<0>]	24	static
+transfer_buffer.hpp:54:5:uavcan::StaticTransferBuffer<Size>::StaticTransferBuffer() [with short unsigned int Size = 7]	16	static
+generic_publisher.hpp:164:5:int uavcan::GenericPublisher<DataSpec, DataStruct>::doEncode(const DataStruct&, uavcan::ITransferBuffer&) const [with DataSpec = uavcan::protocol::NodeStatus_<0>; DataStruct = uavcan::protocol::NodeStatus_<0>]	48	static
+method_binder.hpp:47:5:uavcan::MethodBinder<ObjectPtr, MemFunPtr>::operator bool() const [with ObjectPtr = uavcan::NodeStatusProvider*; MemFunPtr = void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)]	24	static
+generic_subscriber.hpp:228:5:int uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::checkInit() [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	40	static
+array.hpp:186:5:uavcan::StaticArrayBase<Size>::StaticArrayBase() [with unsigned int Size = 16]	16	static
+array.hpp:296:50:typename uavcan::EnableIf<(sizeof (((U)(0) >= U())) != 0)>::Type uavcan::ArrayImpl<T, ArrayMode, MaxSize>::initialize(int) [with U = unsigned char; T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize = 16]	24	static
+array.hpp:218:5:uavcan::DynamicArrayBase<MaxSize>::DynamicArrayBase() [with unsigned int MaxSize = 255]	16	static
+array.hpp:296:50:typename uavcan::EnableIf<(sizeof (((U)(0) >= U())) != 0)>::Type uavcan::ArrayImpl<T, ArrayMode, MaxSize>::initialize(int) [with U = unsigned char; T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 255]	24	static
+array.hpp:189:14:uavcan::StaticArrayBase<Size>::SizeType uavcan::StaticArrayBase<Size>::validateRange(uavcan::StaticArrayBase<Size>::SizeType) const [with unsigned int Size = 16]	16	static
+array.hpp:221:14:uavcan::DynamicArrayBase<MaxSize>::SizeType uavcan::DynamicArrayBase<MaxSize>::validateRange(uavcan::DynamicArrayBase<MaxSize>::SizeType) const [with unsigned int MaxSize = 255]	16	static
+NodeStatus.hpp:262:5:static int uavcan::protocol::NodeStatus_<_tmpl>::encode(uavcan::protocol::NodeStatus_<_tmpl>::ParameterType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with int _tmpl = 0]	32	static
+templates.hpp:172:4:To uavcan::coerceOrFallback(const From&, const To&) [with To = bool; From = uavcan::NodeStatusProvider*]	24	static
+templates.hpp:172:4:To uavcan::coerceOrFallback(const From&, const To&) [with To = bool; From = void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)]	24	static
+lazy_constructor.hpp:154:10:void uavcan::LazyConstructor<T>::construct(typename uavcan::ParameterType<P1>::Type, typename uavcan::ParameterType<P2>::Type, typename uavcan::ParameterType<P3>::Type, typename uavcan::ParameterType<P4>::Type) [with P1 = uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>&; P2 = const uavcan::DataTypeDescriptor&; P3 = short unsigned int; P4 = uavcan::IPoolAllocator&; T = uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder]	40	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+templates.hpp:162:15:static To uavcan::CoerceOrFallbackImpl<From, To>::impl(const From&, const To&, uavcan::TrueType) [with From = uavcan::NodeStatusProvider*; To = bool]	24	static
+templates.hpp:162:15:static To uavcan::CoerceOrFallbackImpl<From, To>::impl(const From&, const To&, uavcan::TrueType) [with From = void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&); To = bool]	24	static
+lazy_constructor.hpp:53:10:void uavcan::LazyConstructor<T>::ensureNotConstructed() const [with T = uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::TransferForwarder]	16	static
+generic_subscriber.hpp:143:9:uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::TransferForwarder::TransferForwarder(uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::SelfType&, const uavcan::DataTypeDescriptor&, uavcan::uint16_t, uavcan::IPoolAllocator&) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	40	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 32; T = long unsigned int]	24	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 2; T = unsigned char]	24	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 3; T = unsigned char]	24	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 16; T = short unsigned int]	24	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	4	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 32; T = long unsigned int]	16	static
+scalar_codec.hpp:76:5:static typename uavcan::EnableIf<((sizeof (T) * 8) == BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 32; T = long unsigned int]	16	static
+scalar_codec.hpp:28:5:static typename uavcan::EnableIf<(BitLen > 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 32; unsigned int Size = 4]	16	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	4	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 2; T = unsigned char]	16	static
+scalar_codec.hpp:69:5:static typename uavcan::EnableIf<((sizeof (T) * 8) > BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 2; T = unsigned char]	16	static
+scalar_codec.hpp:50:5:static typename uavcan::EnableIf<(BitLen <= 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 2; unsigned int Size = 1]	16	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	4	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 3; T = unsigned char]	16	static
+scalar_codec.hpp:69:5:static typename uavcan::EnableIf<((sizeof (T) * 8) > BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 3; T = unsigned char]	16	static
+scalar_codec.hpp:50:5:static typename uavcan::EnableIf<(BitLen <= 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 3; unsigned int Size = 1]	16	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	4	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 16; T = short unsigned int]	16	static
+scalar_codec.hpp:76:5:static typename uavcan::EnableIf<((sizeof (T) * 8) == BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 16; T = short unsigned int]	16	static
+scalar_codec.hpp:28:5:static typename uavcan::EnableIf<(BitLen > 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 16; unsigned int Size = 2]	16	static
+integer_spec.hpp:48:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImplGeneric::max() [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:48:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImplGeneric::max() [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:48:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImplGeneric::max() [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+node_status_provider.hpp:51:21:uavcan::NodeStatusProvider::~NodeStatusProvider()	16	static
+node_status_provider.hpp:51:21:virtual uavcan::NodeStatusProvider::~NodeStatusProvider()	16	static
+service_server.hpp:90:21:uavcan::ServiceServer<uavcan::protocol::GetNodeInfo_, uavcan::MethodBinder<uavcan::NodeStatusProvider*, void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)> >::~ServiceServer()	16	static
+service_server.hpp:90:21:virtual uavcan::ServiceServer<uavcan::protocol::GetNodeInfo_, uavcan::MethodBinder<uavcan::NodeStatusProvider*, void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)> >::~ServiceServer()	16	static
+uc_node_status_provider.cpp:161:1:void __static_initialization_and_destruction_0(int, int)	16	static
+service_server.hpp:40:7:uavcan::ServiceResponseDataStructure<uavcan::protocol::GetNodeInfo_::Response_<0> >::~ServiceResponseDataStructure()	16	static
+service_server.hpp:107:18:void uavcan::ServiceServer<DataType_, Callback_>::handleReceivedDataStruct(uavcan::ReceivedDataStructure<typename DataType_::Request>&) [with DataType_ = uavcan::protocol::GetNodeInfo_; Callback_ = uavcan::MethodBinder<uavcan::NodeStatusProvider*, void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)>]	456	static
+generic_subscriber.hpp:137:14:void uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::TransferForwarder::handleIncomingTransfer(uavcan::IncomingTransfer&) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	16	static
+generic_subscriber.hpp:73:18:uavcan::TransferType uavcan::ReceivedDataStructure<DataType_>::getTransferType() const [with DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	16	static
+service_server.hpp:48:5:uavcan::ServiceResponseDataStructure<ResponseDataType_>::ServiceResponseDataStructure() [with ResponseDataType_ = uavcan::protocol::GetNodeInfo_::Response_<0>]	16	static
+service_server.hpp:61:10:bool uavcan::ServiceResponseDataStructure<ResponseDataType_>::isResponseEnabled() const [with ResponseDataType_ = uavcan::protocol::GetNodeInfo_::Response_<0>]	16	static
+method_binder.hpp:75:10:void uavcan::MethodBinder<ObjectPtr, MemFunPtr>::operator()(Par1&, Par2&) [with Par1 = uavcan::ReceivedDataStructure<uavcan::protocol::GetNodeInfo_::Request_<0> >; Par2 = uavcan::ServiceResponseDataStructure<uavcan::protocol::GetNodeInfo_::Response_<0> >; ObjectPtr = uavcan::NodeStatusProvider*; MemFunPtr = void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)]	24	static
+generic_subscriber.hpp:72:22:uavcan::TransferPriority uavcan::ReceivedDataStructure<DataType_>::getPriority() const [with DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	16	static
+generic_subscriber.hpp:75:12:uavcan::NodeID uavcan::ReceivedDataStructure<DataType_>::getSrcNodeID() const [with DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	16	static
+generic_subscriber.hpp:74:16:uavcan::TransferID uavcan::ReceivedDataStructure<DataType_>::getTransferID() const [with DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	16	static
+generic_publisher.hpp:144:9:int uavcan::GenericPublisher<DataSpec, DataStruct>::publish(const DataStruct&, uavcan::TransferType, uavcan::NodeID, uavcan::TransferID, uavcan::MonotonicTime) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Response_<0>]	48	static
+generic_subscriber.hpp:39:21:uavcan::ReceivedDataStructure<uavcan::protocol::GetNodeInfo_::Request_<0> >::~ReceivedDataStructure()	16	static
+generic_subscriber.hpp:164:12:uavcan::GenericSubscriber<uavcan::protocol::GetNodeInfo_, uavcan::protocol::GetNodeInfo_::Request_<0>, uavcan::TransferListener>::ReceivedDataStructureSpec::~ReceivedDataStructureSpec()	16	static
+generic_subscriber.hpp:253:6:void uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::handleIncomingTransfer(uavcan::IncomingTransfer&) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	48	static
+generic_subscriber.hpp:44:9:Ret uavcan::ReceivedDataStructure<DataType_>::safeget() const [with Ret = uavcan::TransferType; Ret (uavcan::IncomingTransfer::* Fun)() const = &uavcan::IncomingTransfer::getTransferType; DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	16	static
+method_binder.hpp:25:10:void uavcan::MethodBinder<ObjectPtr, MemFunPtr>::validateBeforeCall() const [with ObjectPtr = uavcan::NodeStatusProvider*; MemFunPtr = void (uavcan::NodeStatusProvider::*)(const uavcan::protocol::GetNodeInfo_::Request_<0>&, uavcan::protocol::GetNodeInfo_::Response_<0>&)]	16	static
+generic_subscriber.hpp:44:9:Ret uavcan::ReceivedDataStructure<DataType_>::safeget() const [with Ret = uavcan::TransferPriority; Ret (uavcan::IncomingTransfer::* Fun)() const = &uavcan::IncomingTransfer::getPriority; DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	24	static
+generic_subscriber.hpp:44:9:Ret uavcan::ReceivedDataStructure<DataType_>::safeget() const [with Ret = uavcan::NodeID; Ret (uavcan::IncomingTransfer::* Fun)() const = &uavcan::IncomingTransfer::getSrcNodeID; DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	24	static
+generic_subscriber.hpp:44:9:Ret uavcan::ReceivedDataStructure<DataType_>::safeget() const [with Ret = uavcan::TransferID; Ret (uavcan::IncomingTransfer::* Fun)() const = &uavcan::IncomingTransfer::getTransferID; DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	24	static
+transfer_buffer.hpp:50:21:uavcan::StaticTransferBuffer<377>::~StaticTransferBuffer()	16	static
+transfer_buffer.hpp:50:21:virtual uavcan::StaticTransferBuffer<377>::~StaticTransferBuffer()	16	static
+generic_publisher.hpp:178:5:int uavcan::GenericPublisher<DataSpec, DataStruct>::genericPublish(const DataStruct&, uavcan::TransferType, uavcan::NodeID, uavcan::TransferID*, uavcan::MonotonicTime) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Response_<0>]	448	static
+generic_subscriber.hpp:168:9:uavcan::GenericSubscriber<DataSpec, DataStruct, TransferListenerType>::ReceivedDataStructureSpec::ReceivedDataStructureSpec(const uavcan::IncomingTransfer*) [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Request_<0>; TransferListenerType = uavcan::TransferListener]	16	static
+GetNodeInfo.hpp:263:5:static int uavcan::protocol::GetNodeInfo_::Request_<_tmpl>::decode(uavcan::protocol::GetNodeInfo_::Request_<_tmpl>::ReferenceType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with int _tmpl = 0]	32	static
+transfer_buffer.hpp:54:5:uavcan::StaticTransferBuffer<Size>::StaticTransferBuffer() [with short unsigned int Size = 377]	16	static
+generic_publisher.hpp:164:5:int uavcan::GenericPublisher<DataSpec, DataStruct>::doEncode(const DataStruct&, uavcan::ITransferBuffer&) const [with DataSpec = uavcan::protocol::GetNodeInfo_; DataStruct = uavcan::protocol::GetNodeInfo_::Response_<0>]	48	static
+generic_subscriber.hpp:58:5:uavcan::ReceivedDataStructure<DataType_>::ReceivedDataStructure(const uavcan::IncomingTransfer*) [with DataType_ = uavcan::protocol::GetNodeInfo_::Request_<0>]	16	static
+GetNodeInfo.hpp:294:5:static int uavcan::protocol::GetNodeInfo_::Response_<_tmpl>::encode(uavcan::protocol::GetNodeInfo_::Response_<_tmpl>::ParameterType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with int _tmpl = 0]	32	static
+GetNodeInfo.hpp:98:9:uavcan::protocol::GetNodeInfo_::Request_<_tmpl>::Request_() [with int _tmpl = 0]	16	static
+SoftwareVersion.hpp:218:5:static int uavcan::protocol::SoftwareVersion_<_tmpl>::encode(uavcan::protocol::SoftwareVersion_<_tmpl>::ParameterType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with int _tmpl = 0]	32	static
+HardwareVersion.hpp:182:5:static int uavcan::protocol::HardwareVersion_<_tmpl>::encode(uavcan::protocol::HardwareVersion_<_tmpl>::ParameterType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with int _tmpl = 0]	32	static
+array.hpp:697:16:static int uavcan::Array<T, ArrayMode, MaxSize_>::encode(const SelfType&, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	40	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	32	static
+array.hpp:697:16:static int uavcan::Array<T, ArrayMode, MaxSize_>::encode(const SelfType&, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize_ = 16]	40	static
+array.hpp:697:16:static int uavcan::Array<T, ArrayMode, MaxSize_>::encode(const SelfType&, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	40	static
+array.hpp:449:9:int uavcan::Array<T, ArrayMode, MaxSize_>::encodeImpl(uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode, uavcan::TrueType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	48	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 8; T = unsigned char]	24	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 64; T = long long unsigned int]	40	static
+array.hpp:434:9:int uavcan::Array<T, ArrayMode, MaxSize_>::encodeImpl(uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode, uavcan::FalseType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize_ = 16]	40	static
+array.hpp:449:9:int uavcan::Array<T, ArrayMode, MaxSize_>::encodeImpl(uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode, uavcan::TrueType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	48	static
+array.hpp:429:17:static bool uavcan::Array<T, ArrayMode, MaxSize_>::isOptimizedTailArray(uavcan::TailArrayOptimizationMode) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	16	static
+integer_spec.hpp:110:16:static int uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::encode(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType, uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode) [with unsigned int BitLen_ = 7; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+array.hpp:434:9:int uavcan::Array<T, ArrayMode, MaxSize_>::encodeImpl(uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode, uavcan::FalseType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	40	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	4	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 8; T = unsigned char]	16	static
+scalar_codec.hpp:76:5:static typename uavcan::EnableIf<((sizeof (T) * 8) == BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 8; T = unsigned char]	16	static
+scalar_codec.hpp:50:5:static typename uavcan::EnableIf<(BitLen <= 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 8; unsigned int Size = 1]	16	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 64; T = long long unsigned int]	16	static
+scalar_codec.hpp:76:5:static typename uavcan::EnableIf<((sizeof (T) * 8) == BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 64; T = long long unsigned int]	16	static
+scalar_codec.hpp:28:5:static typename uavcan::EnableIf<(BitLen > 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 64; unsigned int Size = 8]	16	static
+array.hpp:429:17:static bool uavcan::Array<T, ArrayMode, MaxSize_>::isOptimizedTailArray(uavcan::TailArrayOptimizationMode) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	16	static
+array.hpp:434:9:int uavcan::Array<T, ArrayMode, MaxSize_>::encodeImpl(uavcan::ScalarCodec&, uavcan::TailArrayOptimizationMode, uavcan::FalseType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	40	static
+integer_spec.hpp:96:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::validate() [with unsigned int BitLen_ = 7; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:78:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::saturate(uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType&) [with unsigned int BitLen_ = 7; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	24	static
+scalar_codec.hpp:104:5:int uavcan::ScalarCodec::encode(T) [with unsigned int BitLen = 7; T = unsigned char]	24	static
+array.hpp:338:22:const ValueType& uavcan::ArrayImpl<T, ArrayMode, MaxSize>::at(uavcan::ArrayImpl<T, ArrayMode, MaxSize>::SizeType) const [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize = 80]	16	static
+integer_spec.hpp:48:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImplGeneric::max() [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:69:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImpl64::max() [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:106:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::max() [with unsigned int BitLen_ = 7; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+integer_spec.hpp:107:24:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::min() [with unsigned int BitLen_ = 7; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	4	static
+scalar_codec.hpp:79:10:void uavcan::ScalarCodec::validate() [with unsigned int BitLen = 7; T = unsigned char]	16	static
+scalar_codec.hpp:69:5:static typename uavcan::EnableIf<((sizeof (T) * 8) > BitLen)>::Type uavcan::ScalarCodec::clearExtraBits(T&) [with unsigned int BitLen = 7; T = unsigned char]	16	static
+scalar_codec.hpp:50:5:static typename uavcan::EnableIf<(BitLen <= 8)>::Type uavcan::ScalarCodec::convertByteOrder(uavcan::uint8_t (&)[Size]) [with unsigned int BitLen = 7; unsigned int Size = 1]	16	static
+array.hpp:221:14:uavcan::DynamicArrayBase<MaxSize>::SizeType uavcan::DynamicArrayBase<MaxSize>::validateRange(uavcan::DynamicArrayBase<MaxSize>::SizeType) const [with unsigned int MaxSize = 80]	16	static
+integer_spec.hpp:48:28:static uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::StorageType uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::LimitsImplGeneric::max() [with unsigned int BitLen_ = 7; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	8	static
+uc_node_status_provider.cpp:161:1:cpp)	8	static

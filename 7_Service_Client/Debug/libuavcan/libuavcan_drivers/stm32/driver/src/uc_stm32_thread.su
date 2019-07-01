@@ -1,0 +1,79 @@
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+data_type.hpp:56:5:uavcan::DataTypeID::DataTypeID()	16	static
+data_type.hpp:58:5:uavcan::DataTypeID::DataTypeID(uavcan::uint16_t)	16	static
+data_type.hpp:114:5:uavcan::DataTypeSignature::DataTypeSignature()	16	static
+data_type.hpp:115:14:uavcan::DataTypeSignature::DataTypeSignature(uavcan::uint64_t)	24	static
+data_type.hpp:140:5:uavcan::DataTypeDescriptor::DataTypeDescriptor()	16	static
+data_type.hpp:145:5:uavcan::DataTypeDescriptor::DataTypeDescriptor(uavcan::DataTypeKind, uavcan::DataTypeID, const uavcan::DataTypeSignature&, const char*)	32	static
+global_data_type_registry.hpp:41:9:uavcan::GlobalDataTypeRegistry::Entry::Entry()	16	static
+global_data_type_registry.hpp:119:10:bool uavcan::GlobalDataTypeRegistry::isFrozen() const	16	static
+gthr-default.h:229:1:int __gthread_key_delete(__gthread_key_t)	16	static
+GetNodeInfo.hpp:217:24:static const char* uavcan::protocol::GetNodeInfo_::getDataTypeFullName()	4	static
+GetNodeInfo.hpp:350:36:static uavcan::DataTypeSignature uavcan::protocol::GetNodeInfo_::getDataTypeSignature()	16	static
+GetDataTypeInfo.hpp:257:24:static const char* uavcan::protocol::GetDataTypeInfo_::getDataTypeFullName()	4	static
+GetDataTypeInfo.hpp:428:36:static uavcan::DataTypeSignature uavcan::protocol::GetDataTypeInfo_::getDataTypeSignature()	16	static
+RestartNode.hpp:190:24:static const char* uavcan::protocol::RestartNode_::getDataTypeFullName()	4	static
+RestartNode.hpp:289:36:static uavcan::DataTypeSignature uavcan::protocol::RestartNode_::getDataTypeSignature()	16	static
+GetTransportStats.hpp:206:24:static const char* uavcan::protocol::GetTransportStats_::getDataTypeFullName()	4	static
+GetTransportStats.hpp:339:36:static uavcan::DataTypeSignature uavcan::protocol::GetTransportStats_::getDataTypeSignature()	16	static
+uc_stm32_thread.cpp:89:6:bool uavcan_stm32::BusEvent::wait(uavcan::MonotonicDuration)	40	static
+uc_stm32_thread.cpp:108:6:void uavcan_stm32::BusEvent::signal()	16	static
+uc_stm32_thread.cpp:113:6:void uavcan_stm32::BusEvent::signalFromInterrupt()	16	static
+uc_stm32_thread.cpp:120:6:void uavcan_stm32::BusEvent::yieldFromISR()	16	static,ignoring_inline_asm
+uc_stm32_thread.cpp:128:6:void uavcan_stm32::Mutex::lock()	16	static
+uc_stm32_thread.cpp:133:6:void uavcan_stm32::Mutex::unlock()	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::GlobalDataTypeRegistry::Entry]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::GlobalDataTypeRegistry::Entry]	16	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::NodeStatus_<0>]	32	static
+NodeStatus.hpp:226:17:static void uavcan::protocol::NodeStatus_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+SoftwareVersion.hpp:182:17:static void uavcan::protocol::SoftwareVersion_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+HardwareVersion.hpp:148:17:static void uavcan::protocol::HardwareVersion_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 80]	16	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::GetNodeInfo_]	32	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 16; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+DataTypeKind.hpp:117:17:static void uavcan::protocol::DataTypeKind_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 64; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 8; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::GetDataTypeInfo_]	32	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::debug::LogMessage_<0>]	32	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 40; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:168:17:static void uavcan::IntegerSpec<1, (uavcan::Signedness)0, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::RestartNode_]	32	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 48; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::protocol::CANIfaceStats_<0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 3]	16	static
+global_data_type_registry.hpp:188:5:uavcan::DefaultDataTypeRegistrator<Type>::DefaultDataTypeRegistrator() [with Type = uavcan::protocol::GetTransportStats_]	32	static
+time.hpp:44:13:uavcan::int64_t uavcan::DurationBase<D>::toMSec() const [with D = uavcan::MonotonicDuration]	24	static
+global_data_type_registry.hpp:37:12:uavcan::GlobalDataTypeRegistry::Entry::~Entry()	16	static
+global_data_type_registry.hpp:215:18:void __tcf_0()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::NodeStatus_<0>]	72	static
+NodeStatus.hpp:329:29:static uavcan::DataTypeSignature uavcan::protocol::NodeStatus_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+SoftwareVersion.hpp:285:29:static uavcan::DataTypeSignature uavcan::protocol::SoftwareVersion_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+HardwareVersion.hpp:239:29:static uavcan::DataTypeSignature uavcan::protocol::HardwareVersion_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+global_data_type_registry.hpp:215:18:void __tcf_1()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::GetNodeInfo_]	72	static
+DataTypeKind.hpp:172:29:static uavcan::DataTypeSignature uavcan::protocol::DataTypeKind_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+global_data_type_registry.hpp:215:18:void __tcf_2()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::GetDataTypeInfo_]	72	static
+global_data_type_registry.hpp:215:18:void __tcf_3()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::debug::LogMessage_<0>]	72	static
+global_data_type_registry.hpp:215:18:void __tcf_4()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::RestartNode_]	72	static
+CANIfaceStats.hpp:125:17:static void uavcan::protocol::CANIfaceStats_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+global_data_type_registry.hpp:215:18:void __tcf_5()	8	static
+global_data_type_registry.hpp:208:44:uavcan::GlobalDataTypeRegistry::RegistrationResult uavcan::GlobalDataTypeRegistry::registerDataType(uavcan::DataTypeID) [with Type = uavcan::protocol::GetTransportStats_]	72	static
+NodeStatus.hpp:221:24:static const char* uavcan::protocol::NodeStatus_<_tmpl>::getDataTypeFullName() [with int _tmpl = 0]	4	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 32; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 2; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+integer_spec.hpp:131:17:static void uavcan::IntegerSpec<BitLen_, Signedness, CastMode>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with unsigned int BitLen_ = 3; uavcan::Signedness Signedness = (uavcan::Signedness)0; uavcan::CastMode CastMode = (uavcan::CastMode)0]	16	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)0; unsigned int MaxSize_ = 16]	16	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 255]	16	static
+LogMessage.hpp:209:29:static uavcan::DataTypeSignature uavcan::protocol::debug::LogMessage_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+LogMessage.hpp:125:24:static const char* uavcan::protocol::debug::LogMessage_<_tmpl>::getDataTypeFullName() [with int _tmpl = 0]	4	static
+CANIfaceStats.hpp:204:29:static uavcan::DataTypeSignature uavcan::protocol::CANIfaceStats_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+LogLevel.hpp:127:17:static void uavcan::protocol::debug::LogLevel_<_tmpl>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with int _tmpl = 0]	24	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 31]	16	static
+array.hpp:707:17:static void uavcan::Array<T, ArrayMode, MaxSize_>::extendDataTypeSignature(uavcan::DataTypeSignature&) [with T = uavcan::IntegerSpec<8, (uavcan::Signedness)0, (uavcan::CastMode)0>; uavcan::ArrayMode ArrayMode = (uavcan::ArrayMode)1; unsigned int MaxSize_ = 90]	16	static
+LogLevel.hpp:182:29:static uavcan::DataTypeSignature uavcan::protocol::debug::LogLevel_<_tmpl>::getDataTypeSignature() [with int _tmpl = 0]	16	static
+uc_stm32_thread.cpp:287:1:void __static_initialization_and_destruction_0(int, int)	16	static
+uc_stm32_thread.cpp:287:1:cpp)	8	static

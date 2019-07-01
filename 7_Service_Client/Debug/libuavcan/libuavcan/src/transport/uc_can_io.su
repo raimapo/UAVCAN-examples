@@ -1,0 +1,66 @@
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+templates.hpp:430:26:static long unsigned int uavcan::NumericTraits<long unsigned int>::max()	4	static
+new:168:14:void* operator new(std::size_t, void*)	16	static
+dynamic_memory.hpp:24:13:uavcan::IPoolAllocator::~IPoolAllocator()	16	static
+dynamic_memory.hpp:24:13:virtual uavcan::IPoolAllocator::~IPoolAllocator()	16	static
+dynamic_memory.hpp:21:21:constexpr uavcan::IPoolAllocator::IPoolAllocator()	16	static
+dynamic_memory.hpp:119:5:uavcan::LimitedPoolAllocator::LimitedPoolAllocator(uavcan::IPoolAllocator&, std::size_t)	32	static
+can.hpp:81:10:bool uavcan::CanFrame::priorityLowerThan(const uavcan::CanFrame&) const	16	static
+can.hpp:114:5:uavcan::CanSelectMasks::CanSelectMasks()	16	static
+time.hpp:184:21:uavcan::MonotonicTime::~MonotonicTime()	16	static
+can_io.hpp:52:9:uavcan::CanTxQueue::Entry::Entry(const uavcan::CanFrame&, uavcan::MonotonicTime, uavcan::CanTxQueue::Qos, uavcan::CanIOFlags)	32	static
+can_io.hpp:64:14:bool uavcan::CanTxQueue::Entry::isExpired(uavcan::MonotonicTime) const	16	static
+can_io.hpp:68:14:bool uavcan::CanTxQueue::Entry::qosHigherThan(const uavcan::CanTxQueue::Entry&) const	16	static
+can_io.hpp:81:18:uavcan::CanTxQueue::PriorityInsertionComparator::PriorityInsertionComparator(const uavcan::CanFrame&)	16	static
+can_io.hpp:82:14:bool uavcan::CanTxQueue::PriorityInsertionComparator::operator()(const uavcan::CanTxQueue::Entry*)	16	static
+linked_list.hpp:44:21:uavcan::LinkedListRoot<uavcan::CanTxQueue::Entry>::~LinkedListRoot()	16	static
+can_io.hpp:97:5:uavcan::CanTxQueue::CanTxQueue(uavcan::IPoolAllocator&, uavcan::ISystemClock&, std::size_t)	24	static
+can_io.hpp:114:14:uavcan::uint32_t uavcan::CanTxQueue::getRejectedFrameCount() const	16	static
+can_io.hpp:116:10:bool uavcan::CanTxQueue::isEmpty() const	16	static
+can_io.hpp:126:5:uavcan::CanIfacePerfCounters::CanIfacePerfCounters()	16	static
+can_io.hpp:141:9:uavcan::CanIOManager::IfaceFrameCounters::IfaceFrameCounters()	16	static
+can_io.hpp:164:13:uavcan::uint8_t uavcan::CanIOManager::getNumIfaces() const	16	static
+can_io.hpp:45:12:uavcan::CanTxQueue::Entry::~Entry()	16	static
+uc_can_io.cpp:31:6:static void uavcan::CanTxQueue::Entry::destroy(uavcan::CanTxQueue::Entry*&, uavcan::IPoolAllocator&)	16	static
+uc_can_io.cpp:41:6:bool uavcan::CanTxQueue::Entry::qosHigherThan(const uavcan::CanFrame&, uavcan::CanTxQueue::Qos) const	24	static
+uc_can_io.cpp:50:6:bool uavcan::CanTxQueue::Entry::qosLowerThan(const uavcan::CanFrame&, uavcan::CanTxQueue::Qos) const	24	static
+uc_can_io.cpp:89:1:uavcan::CanTxQueue::~CanTxQueue()	24	static
+uc_can_io.cpp:100:6:void uavcan::CanTxQueue::registerRejectedFrame()	24	static
+uc_can_io.cpp:108:6:void uavcan::CanTxQueue::push(const uavcan::CanFrame&, uavcan::MonotonicTime, uavcan::CanTxQueue::Qos, uavcan::CanIOFlags)	96	static
+uc_can_io.cpp:180:20:uavcan::CanTxQueue::Entry* uavcan::CanTxQueue::peek()	56	static
+uc_can_io.cpp:202:6:void uavcan::CanTxQueue::remove(uavcan::CanTxQueue::Entry*&)	16	static
+uc_can_io.cpp:213:17:const uavcan::CanFrame* uavcan::CanTxQueue::getTopPriorityPendingFrame() const	16	static
+uc_can_io.cpp:218:6:bool uavcan::CanTxQueue::topPriorityHigherOrEqual(const uavcan::CanFrame&) const	24	static
+uc_can_io.cpp:231:5:int uavcan::CanIOManager::sendToIface(uavcan::uint8_t, const uavcan::CanFrame&, uavcan::MonotonicTime, uavcan::CanIOFlags)	48	static
+uc_can_io.cpp:253:5:int uavcan::CanIOManager::sendFromTxQueue(uavcan::uint8_t)	56	static
+uc_can_io.cpp:269:5:int uavcan::CanIOManager::callSelect(uavcan::CanSelectMasks&, const uavcan::CanFrame* (&)[3], uavcan::MonotonicTime)	56	static
+uc_can_io.cpp:285:1:uavcan::CanIOManager::CanIOManager(uavcan::ICanDriver&, uavcan::IPoolAllocator&, uavcan::ISystemClock&, std::size_t)	40	static
+uc_can_io.cpp:310:9:uavcan::uint8_t uavcan::CanIOManager::makePendingTxMask() const	24	static
+uc_can_io.cpp:323:22:uavcan::CanIfacePerfCounters uavcan::CanIOManager::getIfacePerfCounters(uavcan::uint8_t) const	72	static
+uc_can_io.cpp:338:5:int uavcan::CanIOManager::send(const uavcan::CanFrame&, uavcan::MonotonicTime, uavcan::MonotonicTime, uavcan::uint8_t, uavcan::CanTxQueue::Qos, uavcan::CanIOFlags)	120	static
+uc_can_io.cpp:440:5:int uavcan::CanIOManager::receive(uavcan::CanRxFrame&, uavcan::MonotonicTime, uavcan::CanIOFlags&)	96	static
+templates.hpp:281:10:const T& uavcan::min(const T&, const T&) [with T = unsigned int]	16	static
+templates.hpp:254:6:void uavcan::fill(ForwardIt, ForwardIt, const T&) [with ForwardIt = unsigned char*; T = unsigned char]	24	static
+time.hpp:100:5:uavcan::TimeBase<T, D>::~TimeBase() [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::CanTxQueue::Entry]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::CanTxQueue::Entry]	16	static
+build_config.hpp:244:17:static void uavcan::IsDynamicallyAllocatable<T>::check() [with T = uavcan::CanTxQueue::Entry]	16	static
+time.hpp:129:10:bool uavcan::TimeBase<T, D>::operator>(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:49:5:uavcan::LinkedListRoot<T>::LinkedListRoot() [with T = uavcan::CanTxQueue::Entry]	16	static
+linked_list.hpp:54:10:bool uavcan::LinkedListRoot<T>::isEmpty() const [with T = uavcan::CanTxQueue::Entry]	16	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::CanTxQueue::Entry]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::CanTxQueue::Entry]	16	static
+time.hpp:131:10:bool uavcan::TimeBase<T, D>::operator>=(const T&) const [with T = uavcan::MonotonicTime; D = uavcan::MonotonicDuration]	16	static
+linked_list.hpp:116:6:void uavcan::LinkedListRoot<T>::insertBefore(T*, Predicate) [with Predicate = uavcan::CanTxQueue::PriorityInsertionComparator; T = uavcan::CanTxQueue::Entry]	40	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::CanTxQueue::Entry]	32	static
+lazy_constructor.hpp:95:14:T* uavcan::LazyConstructor<T>::operator->() [with T = uavcan::CanTxQueue]	16	static
+lazy_constructor.hpp:62:5:uavcan::LazyConstructor<T>::LazyConstructor() [with T = uavcan::CanTxQueue]	24	static
+lazy_constructor.hpp:146:10:void uavcan::LazyConstructor<T>::construct(typename uavcan::ParameterType<P1>::Type, typename uavcan::ParameterType<P2>::Type, typename uavcan::ParameterType<P3>::Type) [with P1 = uavcan::IPoolAllocator&; P2 = uavcan::ISystemClock&; P3 = unsigned int; T = uavcan::CanTxQueue]	32	static
+lazy_constructor.hpp:94:14:const T* uavcan::LazyConstructor<T>::operator->() const [with T = uavcan::CanTxQueue]	16	static
+lazy_constructor.hpp:98:14:T& uavcan::LazyConstructor<T>::operator*() [with T = uavcan::CanTxQueue]	16	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::CanTxQueue::Entry]	16	static
+lazy_constructor.hpp:45:10:void uavcan::LazyConstructor<T>::ensureConstructed() const [with T = uavcan::CanTxQueue]	16	static
+lazy_constructor.hpp:53:10:void uavcan::LazyConstructor<T>::ensureNotConstructed() const [with T = uavcan::CanTxQueue]	16	static
+dynamic_memory.hpp:112:7:uavcan::LimitedPoolAllocator::~LimitedPoolAllocator()	16	static
+dynamic_memory.hpp:112:7:virtual uavcan::LimitedPoolAllocator::~LimitedPoolAllocator()	16	static

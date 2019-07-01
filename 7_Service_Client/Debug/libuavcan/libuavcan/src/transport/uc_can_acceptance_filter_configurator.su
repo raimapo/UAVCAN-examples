@@ -1,0 +1,68 @@
+templates.hpp:34:17:static void uavcan::StaticAssert<true>::check()	4	static
+templates.hpp:51:5:uavcan::Noncopyable::Noncopyable()	16	static
+templates.hpp:52:5:uavcan::Noncopyable::~Noncopyable()	16	static
+transfer.hpp:132:13:uavcan::uint8_t uavcan::NodeID::get() const	16	static
+data_type.hpp:69:14:uavcan::uint16_t uavcan::DataTypeID::get() const	16	static
+data_type.hpp:159:16:uavcan::DataTypeID uavcan::DataTypeDescriptor::getID() const	16	static
+new:168:14:void* operator new(std::size_t, void*)	16	static
+can.hpp:94:10:bool uavcan::CanFilterConfig::operator==(const uavcan::CanFilterConfig&) const	16	static
+can.hpp:99:5:uavcan::CanFilterConfig::CanFilterConfig()	16	static
+can_io.hpp:164:13:uavcan::uint8_t uavcan::CanIOManager::getNumIfaces() const	16	static
+can_io.hpp:169:17:uavcan::ICanDriver& uavcan::CanIOManager::getCanDriver()	16	static
+transfer_listener.hpp:143:31:const uavcan::DataTypeDescriptor& uavcan::TransferListener::getDataTypeDescriptor() const	16	static
+dispatcher.hpp:114:49:const uavcan::LinkedListRoot<uavcan::TransferListener>& uavcan::Dispatcher::ListenerRegistry::getList() const	16	static
+dispatcher.hpp:188:45:const uavcan::LinkedListRoot<uavcan::TransferListener>& uavcan::Dispatcher::getListOfMessageListeners() const	16	static
+dispatcher.hpp:222:12:uavcan::NodeID uavcan::Dispatcher::getNodeID() const	16	static
+dispatcher.hpp:234:19:uavcan::CanIOManager& uavcan::Dispatcher::getCanIOManager()	16	static
+scheduler.hpp:119:17:uavcan::Dispatcher& uavcan::Scheduler::getDispatcher()	16	static
+scheduler.hpp:120:23:const uavcan::Dispatcher& uavcan::Scheduler::getDispatcher() const	16	static
+abstract_node.hpp:28:17:uavcan::Dispatcher& uavcan::INode::getDispatcher()	16	static
+abstract_node.hpp:39:12:uavcan::NodeID uavcan::INode::getNodeID() const	16	static
+uc_can_acceptance_filter_configurator.cpp:17:9:uavcan::int16_t uavcan::CanAcceptanceFilterConfigurator::loadInputConfiguration(uavcan::CanAcceptanceFilterConfigurator::AnonymousMessages)	56	static
+uc_can_acceptance_filter_configurator.cpp:62:9:uavcan::int16_t uavcan::CanAcceptanceFilterConfigurator::mergeConfigurations()	64	static
+uc_can_acceptance_filter_configurator.cpp:105:5:int uavcan::CanAcceptanceFilterConfigurator::applyConfiguration()	312	static
+uc_can_acceptance_filter_configurator.cpp:169:5:int uavcan::CanAcceptanceFilterConfigurator::computeConfiguration(uavcan::CanAcceptanceFilterConfigurator::AnonymousMessages)	24	static
+uc_can_acceptance_filter_configurator.cpp:194:10:uavcan::uint16_t uavcan::CanAcceptanceFilterConfigurator::getNumFilters() const	32	static
+uc_can_acceptance_filter_configurator.cpp:227:5:int uavcan::CanAcceptanceFilterConfigurator::addFilterConfig(const uavcan::CanFilterConfig&)	16	static
+uc_can_acceptance_filter_configurator.cpp:237:17:static uavcan::CanFilterConfig uavcan::CanAcceptanceFilterConfigurator::mergeFilters(uavcan::CanFilterConfig&, uavcan::CanFilterConfig&)	24	static
+uc_can_acceptance_filter_configurator.cpp:246:9:static uavcan::uint8_t uavcan::CanAcceptanceFilterConfigurator::countBits(uavcan::uint32_t)	24	static
+multiset.hpp:271:10:void uavcan::Multiset<T>::clear() [with T = uavcan::CanFilterConfig]	24	static
+multiset.hpp:218:8:T* uavcan::Multiset<T>::emplace(P1) [with P1 = uavcan::CanFilterConfig; T = uavcan::CanFilterConfig]	40	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::TransferListener]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::TransferListener]	16	static
+multiset.hpp:461:10:unsigned int uavcan::Multiset<T>::getSize() const [with T = uavcan::CanFilterConfig]	32	static
+multiset.hpp:141:12:uavcan::Multiset<uavcan::CanFilterConfig>::IndexPredicate::~IndexPredicate()	16	static
+multiset.hpp:313:8:T* uavcan::Multiset<T>::getByIndex(unsigned int) [with T = uavcan::CanFilterConfig]	32	static
+multiset.hpp:267:10:void uavcan::Multiset<T>::removeFirst(const T&) [with T = uavcan::CanFilterConfig]	24	static
+templates.hpp:281:10:const T& uavcan::min(const T&, const T&) [with T = short unsigned int]	16	static
+multiset.hpp:218:8:T* uavcan::Multiset<T>::emplace(P1) [with P1 = const uavcan::CanFilterConfig&; T = uavcan::CanFilterConfig]	24	static
+multiset.hpp:262:10:void uavcan::Multiset<T>::removeAllWhere(Predicate) [with Predicate = uavcan::Multiset<uavcan::CanFilterConfig>::YesPredicate; T = uavcan::CanFilterConfig]	16	static
+multiset.hpp:342:29:uavcan::Multiset<T>::Item* uavcan::Multiset<T>::findOrCreateFreeSlot() [with T = uavcan::CanFilterConfig]	32	static
+linked_list.hpp:53:8:T* uavcan::LinkedListRoot<T>::get() const [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
+multiset.hpp:59:14:bool uavcan::Multiset<T>::Item::isConstructed() const [with T = uavcan::CanFilterConfig]	16	static
+linked_list.hpp:32:8:T* uavcan::LinkedListNode<T>::getNextListNode() const [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
+multiset.hpp:144:9:uavcan::Multiset<T>::IndexPredicate::IndexPredicate(unsigned int) [with T = uavcan::CanFilterConfig]	16	static
+multiset.hpp:437:4:T* uavcan::Multiset<T>::find(Predicate) [with Predicate = uavcan::Multiset<uavcan::CanFilterConfig>::IndexPredicate&; T = uavcan::CanFilterConfig]	32	static
+multiset.hpp:158:9:uavcan::Multiset<T>::ComparingPredicate::ComparingPredicate(const T&) [with T = uavcan::CanFilterConfig]	16	static
+multiset.hpp:265:10:void uavcan::Multiset<T>::removeFirstWhere(Predicate) [with Predicate = uavcan::Multiset<uavcan::CanFilterConfig>::ComparingPredicate; T = uavcan::CanFilterConfig]	16	static
+multiset.hpp:395:6:void uavcan::Multiset<T>::removeWhere(Predicate, uavcan::Multiset<T>::RemoveStrategy) [with Predicate = uavcan::Multiset<uavcan::CanFilterConfig>::YesPredicate; T = uavcan::CanFilterConfig]	40	static
+multiset.hpp:105:15:uavcan::Multiset<T>::Item* uavcan::Multiset<T>::Chunk::findFreeSlot() [with T = uavcan::CanFilterConfig]	24	static
+multiset.hpp:85:23:static uavcan::Multiset<T>::Chunk* uavcan::Multiset<T>::Chunk::instantiate(uavcan::IPoolAllocator&) [with T = uavcan::CanFilterConfig]	32	static
+linked_list.hpp:102:6:void uavcan::LinkedListRoot<T>::insert(T*) [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
+multiset.hpp:148:14:bool uavcan::Multiset<T>::IndexPredicate::operator()(const T&) [with T = uavcan::CanFilterConfig]	16	static
+multiset.hpp:395:6:void uavcan::Multiset<T>::removeWhere(Predicate, uavcan::Multiset<T>::RemoveStrategy) [with Predicate = uavcan::Multiset<uavcan::CanFilterConfig>::ComparingPredicate; T = uavcan::CanFilterConfig]	48	static
+multiset.hpp:138:14:bool uavcan::Multiset<T>::YesPredicate::operator()(const T&) const [with T = uavcan::CanFilterConfig]	16	static
+multiset.hpp:61:14:void uavcan::Multiset<T>::Item::destroy() [with T = uavcan::CanFilterConfig]	24	static
+multiset.hpp:369:6:void uavcan::Multiset<T>::compact() [with T = uavcan::CanFilterConfig]	32	static
+multiset.hpp:78:9:uavcan::Multiset<T>::Chunk::Chunk() [with T = uavcan::CanFilterConfig]	24	static
+linked_list.hpp:148:6:void uavcan::LinkedListRoot<T>::remove(const T*) [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	32	static
+linked_list.hpp:34:10:void uavcan::LinkedListNode<T>::setNextListNode(T*) [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
+multiset.hpp:162:14:bool uavcan::Multiset<T>::ComparingPredicate::operator()(const T&) [with T = uavcan::CanFilterConfig]	16	static
+templates.hpp:268:6:void uavcan::fill_n(OutputIt, std::size_t, const T&) [with OutputIt = unsigned char*; T = unsigned char]	24	static
+multiset.hpp:73:12:uavcan::Multiset<uavcan::CanFilterConfig>::Chunk::~Chunk()	24	static
+multiset.hpp:95:21:static void uavcan::Multiset<T>::Chunk::destroy(uavcan::Multiset<T>::Chunk*&, uavcan::IPoolAllocator&) [with T = uavcan::CanFilterConfig]	16	static
+linked_list.hpp:25:5:uavcan::LinkedListNode<T>::LinkedListNode() [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
+linked_list.hpp:29:5:uavcan::LinkedListNode<T>::~LinkedListNode() [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
+multiset.hpp:51:9:uavcan::Multiset<T>::Item::Item() [with T = uavcan::CanFilterConfig]	24	static
+multiset.hpp:57:9:uavcan::Multiset<T>::Item::~Item() [with T = uavcan::CanFilterConfig]	16	static
+build_config.hpp:244:17:static void uavcan::IsDynamicallyAllocatable<T>::check() [with T = uavcan::Multiset<uavcan::CanFilterConfig>::Chunk]	16	static
