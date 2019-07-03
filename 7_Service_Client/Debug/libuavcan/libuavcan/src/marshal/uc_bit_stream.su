@@ -1,6 +1,0 @@
-bit_stream.hpp:39:28:static unsigned int uavcan::BitStream::bitlenToBytelen(unsigned int)	16	static
-bit_stream.hpp:41:24:static void uavcan::BitStream::copyBitArrayAlignedToUnaligned(const uint8_t*, unsigned int, uavcan::uint8_t*, unsigned int)	32	static
-bit_stream.hpp:48:24:static void uavcan::BitStream::copyBitArrayUnalignedToAligned(const uint8_t*, unsigned int, unsigned int, uavcan::uint8_t*)	32	static
-uc_bit_stream.cpp:15:5:int uavcan::BitStream::write(const uint8_t*, unsigned int)	64	static
-uc_bit_stream.cpp:55:5:int uavcan::BitStream::read(uavcan::uint8_t*, unsigned int)	64	static
-templates.hpp:254:6:void uavcan::fill(ForwardIt, ForwardIt, const T&) [with ForwardIt = unsigned char*; T = unsigned char]	24	static

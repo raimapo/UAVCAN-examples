@@ -27,7 +27,7 @@
 #include <uavcan_stm32/uavcan_stm32.hpp>
 #include <uavcan/uavcan.hpp>
 
-#include <uavcan/protocol/file/BeginFirmwareUpdate.hpp>
+#include <uavcan/protocol/file/GetInfo.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -405,8 +405,8 @@ void StartDefaultTask(void const * argument)
 	    while (1);
 	}
 
-	using uavcan::protocol::file::BeginFirmwareUpdate;
-	uavcan::ServiceClient<BeginFirmwareUpdate> client(getNode());
+	using uavcan::protocol::file::GetInfo;
+	uavcan::ServiceClient<GetInfo> client(getNode());
 
     const int client_init_res = client.init();
     if (client_init_res < 0)
@@ -414,12 +414,11 @@ void StartDefaultTask(void const * argument)
     	DEBUG_Printf("Failed to init the client\r\n");
     }
 
-    client.setCallback([](const uavcan::ServiceCallResult<BeginFirmwareUpdate>& call_result)
+    client.setCallback([](const uavcan::ServiceCallResult<GetInfo>& call_result)
     {
     	if (call_result.isSuccessful())  // Whether the call was successful, i.e. whether the response was received
     	{
-    		// The result can be directly streamed; the output will be formatted in human-readable YAML.
-    		//DEBUG_Printf("%s\r\n", call_result);
+    		DEBUG_Printf("SUCCSESS\r\n");
     	}
     	else
     	{
@@ -427,22 +426,22 @@ void StartDefaultTask(void const * argument)
     	}
     });
 
-    BeginFirmwareUpdate::Request request;
-
-    const int call_res = client.call(127, request);
-    if (call_res < 0)
-    {
-    	DEBUG_Printf("Unable to perform service call:\r\n");
-    }
+    GetInfo::Request request;
 
 	getNode().setModeOperational();
   /* Infinite loop */
-  while(client.hasPendingCalls())
+  while(1)
   {
 	    const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
 	    if (res < 0) {
 	    	DEBUG_Printf("UAVCAN spin fail\r\n");
 	    	while(1);
+	    }
+
+	    const int call_res = client.call(127, request);
+	    if (call_res < 0)
+	    {
+	    	DEBUG_Printf("Unable to perform service call:\r\n");
 	    }
   }
   /* USER CODE END 5 */ 

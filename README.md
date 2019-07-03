@@ -29,7 +29,7 @@ Import each project from dowloaded directory.
 4. Publisher (Use UAVCAN Tool GUI to monitor BUS)
 5. Subscriber (Use any serial terminal to monitor values. UAVCAN Tool GUI -> Interactive console ->  broadcast(uavcan.protocol.debug.KeyValue(key='key', value=123), interval=1) and press ENTER)
 6. Service Server (Use UAVCAN Tool GUI -> Interactive console ->  request(uavcan.protocol.file.BeginFirmwareUpdate,5) and press ENTER)
-7. Service Client (need help on testing)
+7. Service Client (Create in PC any txt document with any text inside -> Use UAVCAN Tool GUI -> at bootom left specify file -> launch file server -> in terminal must show SUCCESS and in bus monitor file size)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

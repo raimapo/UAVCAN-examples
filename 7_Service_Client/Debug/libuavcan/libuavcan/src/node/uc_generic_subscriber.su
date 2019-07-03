@@ -1,4 +1,0 @@
-scheduler.hpp:119:17:uavcan::Dispatcher& uavcan::Scheduler::getDispatcher()	16	static
-abstract_node.hpp:28:17:uavcan::Dispatcher& uavcan::INode::getDispatcher()	16	static
-uc_generic_subscriber.cpp:10:5:int uavcan::GenericSubscriberBase::genericStart(uavcan::TransferListener*, bool (uavcan::Dispatcher::*)(uavcan::TransferListener*))	24	static
-uc_generic_subscriber.cpp:27:6:void uavcan::GenericSubscriberBase::stop(uavcan::TransferListener*)	16	static

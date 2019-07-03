@@ -1,2 +1,0 @@
-uc_float_spec.cpp:23:10:static uavcan::uint16_t uavcan::IEEE754Converter::nativeIeeeToHalf(float)	48	static
-uc_float_spec.cpp:66:7:static float uavcan::IEEE754Converter::halfToNativeIeee(uavcan::uint16_t)	32	static

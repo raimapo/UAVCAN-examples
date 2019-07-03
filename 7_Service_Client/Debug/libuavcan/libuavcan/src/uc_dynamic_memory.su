@@ -1,8 +1,0 @@
-dynamic_memory.hpp:24:13:uavcan::IPoolAllocator::~IPoolAllocator()	16	static
-dynamic_memory.hpp:24:13:virtual uavcan::IPoolAllocator::~IPoolAllocator()	16	static
-uc_dynamic_memory.cpp:12:7:virtual void* uavcan::LimitedPoolAllocator::allocate(std::size_t)	16	static
-uc_dynamic_memory.cpp:25:6:virtual void uavcan::LimitedPoolAllocator::deallocate(const void*)	16	static
-uc_dynamic_memory.cpp:36:10:virtual uavcan::uint16_t uavcan::LimitedPoolAllocator::getBlockCapacity() const	32	static
-templates.hpp:281:10:const T& uavcan::min(const T&, const T&) [with T = short unsigned int]	16	static
-dynamic_memory.hpp:112:7:uavcan::LimitedPoolAllocator::~LimitedPoolAllocator()	16	static
-dynamic_memory.hpp:112:7:virtual uavcan::LimitedPoolAllocator::~LimitedPoolAllocator()	16	static
