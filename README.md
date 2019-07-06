@@ -25,22 +25,22 @@ Import each project from dowloaded directory.
 
 1. Simple UAVCAN start
 2. Dynamic ID Client
-3. Dynamic ID Server Centralized control 
-	a. Help needed
-	a. RAM or flash to use for data storage?
-4. Publisher 
-	a. Use UAVCAN Tool GUI to monitor BUS
+3. Dynamic ID Server Centralized control <br />
+	a. Help needed <br />
+	b. RAM or flash to use for data storage?
+4. Publisher <br />
+	a. Use UAVCAN Tool GUI to monitor BUS <br />
 	b. Subscriber tool in GUI could show data
-5. Subscriber 
-	a. Use any serial terminal to monitor values
+5. Subscriber <br />
+	a. Use any serial terminal to monitor values <br />
 	b. UAVCAN Tool GUI -> Interactive console ->  broadcast(uavcan.protocol.debug.KeyValue(key='key', value=123), interval=1) and press ENTER
-6. Service Server 
+6. Service Server <br />
 	a. Use UAVCAN Tool GUI -> Interactive console ->  request(uavcan.protocol.file.BeginFirmwareUpdate,5) and press ENTER
-7. Service Client 
-	a. Create in PC any txt document with any text inside
+7. Service Client <br />
+	a. Create in PC any txt document with any text inside <br />
 	b. Use UAVCAN Tool GUI -> at bottom left specify file -> launch file server -> in terminal must show SUCCESS and in bus monitor file size)
-8. Custom Data Server 
-	a. Create folder uavcan_vendor_specific_types in C:/User/YourName and put custom_data_types. It's needed by UAVCAN Tool GUI to undertand new data types
+8. Custom Data Server  <br />
+	a. Create folder uavcan_vendor_specific_types in C:/User/YourName and put custom_data_types. It's needed by UAVCAN Tool GUI to undertand new data types <br />
 	b. Use in interactive console request(uavcan.thirdparty.custom_data_types.PerformLinearLeastSquaresFit, 5). it will print some info from server. Because we do not push PointXY 
 	so we do not recover calculations. it could be done with using second board.
 
