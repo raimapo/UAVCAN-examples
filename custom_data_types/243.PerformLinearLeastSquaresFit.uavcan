@@ -11,3 +11,4 @@ PointXY[<64] points
 
 float64 slope
 float64 y_intercept
+float64 MyNumber
