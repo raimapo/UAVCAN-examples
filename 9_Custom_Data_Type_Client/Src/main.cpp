@@ -28,6 +28,7 @@
 #include <uavcan/uavcan.hpp>
 
 #include <custom_data_types/MyNumber.hpp>
+//#include <custom_data_types/PointXY.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -392,50 +393,72 @@ void StartDefaultTask(void const * argument)
 {
 
   /* USER CODE BEGIN 5 */
-
 	uint32_t value = 1000000;
 
 	can.init(value);
 
-	getNode().setName("org.test.CustomDataTypeServer");
-	getNode().setNodeID(5);
+	getNode().setName("org.test.CustomDataTypesClient");
+	getNode().setNodeID(6);
 
-	using custom_data_types::MyNumber;
-    uavcan::ServiceServer<MyNumber> server(getNode());
-
-    auto regist_result =
-        uavcan::GlobalDataTypeRegistry::instance().registerDataType<MyNumber>(244); // DTID = 243
-    if (regist_result != uavcan::GlobalDataTypeRegistry::RegistrationResultOk)
-    {
-    	DEBUG_Printf("Failed to register the data type 1");
-    }
-
-    const int res = server.start(
-    	[](const MyNumber::Request& request, MyNumber::Response& response)
-		{
-    		response.x = 123.0;
-    		response.y = 26.36;
-        });
-    if (res < 0)
-    {
-    	DEBUG_Printf("Failed to start the PerformLinearLeastSquaresFit server\r\n");
-    }
 
 	if (getNode().start() < 0) {
 		DEBUG_Printf("UAVCAN start fail\r\n");
 	    while (1);
 	}
 
+
+	//using custom_data_types::PointXY;
+	using custom_data_types::MyNumber;
+	uavcan::ServiceClient<MyNumber> client(getNode());
+
+/*
+    auto regist_result =
+        uavcan::GlobalDataTypeRegistry::instance().registerDataType<PerformLinearLeastSquaresFit>(244);
+    if (regist_result != uavcan::GlobalDataTypeRegistry::RegistrationResultOk)
+    {
+    	DEBUG_Printf("Failed to register the data type 1\r\n");
+    }
+*/
+
+    const int client_init_res = client.init();
+    if (client_init_res < 0)
+    {
+    	DEBUG_Printf("Failed to init the cln_least_squares\r\n");
+    }
+
+
+    client.setCallback([](const uavcan::ServiceCallResult<MyNumber>& call_result)
+    {
+
+    	if (call_result.isSuccessful())  // Whether the call was successful, i.e. whether the response was received
+    	{
+    		DEBUG_Printf("SUCCSESS\r\n");
+    	}
+    	else
+    	{
+    		DEBUG_Printf("Service call to node %d has failed\r\n", static_cast<int>(call_result.getCallID().server_node_id.get()));
+    	}
+    });
+
+    MyNumber::Request request;
+
 	getNode().setModeOperational();
 
   /* Infinite loop */
   for(;;)
   {
-	    const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
+	   const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
 	    if (res < 0) {
 	    	DEBUG_Printf("UAVCAN spin fail\r\n");
 	    	while(1);
 	    }
+
+	    const int call_res = client.call(5, request);
+	    if (call_res < 0)
+	    {
+	    	DEBUG_Printf("Unable to perform service call:\r\n");
+	    }
+
   }
   /* USER CODE END 5 */ 
 }

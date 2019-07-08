@@ -19,12 +19,14 @@ git submodule update --init --recursive
 STM32CubeIDE
 ```
 Import each project from dowloaded directory.
-
+```
+IDE -> File -> import
+```
 
 ## Info on Examples
 
-1. Simple UAVCAN start
-2. Dynamic ID Client
+1. Simple UAVCAN start <br />
+2. Dynamic ID Client <br />
 3. Dynamic ID Server Centralized control <br />
 	a. Help needed <br />
 	b. RAM or flash to use for data storage?
@@ -40,9 +42,15 @@ Import each project from dowloaded directory.
 	a. Create in PC any txt document with any text inside <br />
 	b. Use UAVCAN Tool GUI -> at bottom left specify file -> launch file server -> in terminal must show SUCCESS and in bus monitor file size)
 8. Custom Data Server  <br />
-	a. Create folder uavcan_vendor_specific_types in C:/User/YourName and put custom_data_types. It's needed by UAVCAN Tool GUI to undertand new data types <br />
-	b. Use in interactive console request(uavcan.thirdparty.custom_data_types.PerformLinearLeastSquaresFit, 5). it will print some info from server. Because we do not push PointXY 
-	so we do not recover calculations. it could be done with using second board.
+	a. Use in interactive console request(uavcan.thirdparty.custom_data_types.MyNumber, 5). it will print some info from server. <br />
+	b. Request for additional data not implemented. Help is welcome. <br />
+	c. Data Type ID change and nested Data types are not implemented. Help is welcome.
+9. Custom Data Client <br />
+	a. Use any serial terminal to monitor if connection was succesfull <br />
+	b. Data response for the server additional request not implemented. Help is welcome. <br />
+	c. Needed help on how to use received data. At structure initialization shows "Private" sturcture. <br />
+10. Custom Data Publisher <br />
+	a. No response data needed in Custom Data Types <br />
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

@@ -27,7 +27,7 @@
 #include <uavcan_stm32/uavcan_stm32.hpp>
 #include <uavcan/uavcan.hpp>
 
-#include <custom_data_types/MyNumber.hpp>
+#include <custom_data_types/MyNumbers.hpp>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -392,50 +392,49 @@ void StartDefaultTask(void const * argument)
 {
 
   /* USER CODE BEGIN 5 */
-
 	uint32_t value = 1000000;
 
 	can.init(value);
 
-	getNode().setName("org.test.CustomDataTypeServer");
-	getNode().setNodeID(5);
-
-	using custom_data_types::MyNumber;
-    uavcan::ServiceServer<MyNumber> server(getNode());
-
-    auto regist_result =
-        uavcan::GlobalDataTypeRegistry::instance().registerDataType<MyNumber>(244); // DTID = 243
-    if (regist_result != uavcan::GlobalDataTypeRegistry::RegistrationResultOk)
-    {
-    	DEBUG_Printf("Failed to register the data type 1");
-    }
-
-    const int res = server.start(
-    	[](const MyNumber::Request& request, MyNumber::Response& response)
-		{
-    		response.x = 123.0;
-    		response.y = 26.36;
-        });
-    if (res < 0)
-    {
-    	DEBUG_Printf("Failed to start the PerformLinearLeastSquaresFit server\r\n");
-    }
+	getNode().setName("org.test.CustomDataTypesPublisher");
+	getNode().setNodeID(6);
 
 	if (getNode().start() < 0) {
 		DEBUG_Printf("UAVCAN start fail\r\n");
 	    while (1);
 	}
 
+	using custom_data_types::MyNumbers;
+    uavcan::Publisher<custom_data_types::MyNumbers> pub(getNode());
+
+    const int pub_init_res = pub.init();
+    if (pub_init_res < 0)
+    {
+    	DEBUG_Printf("Failed to start the publisher\r\n");
+    }
+
+
 	getNode().setModeOperational();
 
   /* Infinite loop */
   for(;;)
   {
-	    const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
-	    if (res < 0) {
-	    	DEBUG_Printf("UAVCAN spin fail\r\n");
-	    	while(1);
-	    }
+	  const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
+	  if (res < 0) {
+		  DEBUG_Printf("UAVCAN spin fail\r\n");
+		  while(1);
+	  }
+
+	  custom_data_types::MyNumbers msg;  // Always zero initialized
+	  msg.x = std::rand() / float(RAND_MAX);
+	  msg.y = 123.123;
+
+      const int pub_res = pub.broadcast(msg);
+      if (pub_res < 0)
+      {
+      	DEBUG_Printf("publication failure\r\n");
+      }
+
   }
   /* USER CODE END 5 */ 
 }
