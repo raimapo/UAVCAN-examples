@@ -51,6 +51,8 @@ IDE -> File -> import
 	c. Needed help on how to use received data. At structure initialization shows "Private" sturcture. <br />
 10. Custom Data Publisher <br />
 	a. No response data needed in Custom Data Types <br />
+11. Remote Parameters Config <br />
+	a. Use UAVCAN Tool GUI and fetch, save new or erase parameters. Restart the node. <br />
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
