@@ -29,7 +29,7 @@ IDE -> File -> import
 2. Dynamic ID Client <br />
 3. Dynamic ID Server Centralized control <br />
 	a. Help needed <br />
-	b. RAM or flash to use for data storage?
+	b. How to corectly implement storage backend for stm32 ?
 4. Publisher <br />
 	a. Use UAVCAN Tool GUI to monitor BUS <br />
 	b. Subscriber tool in GUI could show data

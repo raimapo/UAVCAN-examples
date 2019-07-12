@@ -29,10 +29,6 @@
 
 #include <uavcan/protocol/dynamic_node_id_server/centralized.hpp>
 #include <uavcan/protocol/dynamic_node_id_server/centralized/server.hpp>
-//#include <uavcan/protocol/dynamic_node_id_server/event.hpp>
-//#include <uavcan\protocol\dynamic_node_id_server/abstract_server.hpp>
-
-
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -52,7 +48,8 @@
  * Three values of 32 bits each starting at this address
  * Use like this: STM32_UUID[0], STM32_UUID[1], STM32_UUID[2]
  */
-#define STM32_UUID ((uint32_t *)0x1FFF7A10)
+typedef std::array<std::uint8_t, 12> UUID;
+UUID readUniqueID();
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -395,6 +392,15 @@ void DEBUG_Printf(const char *fmt, ...)
     }
     return;
 }
+
+UUID readUniqueID()
+{
+   UUID out_bytes;
+   memcpy(out_bytes.data(), reinterpret_cast<const void*>(0x1FFF7A10), std::tuple_size<UUID>::value);
+   return out_bytes;
+}
+
+
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -411,17 +417,15 @@ void StartDefaultTask(void const * argument)
 
 	uint32_t value = 1000000;
 
-	std::array<uint32_t, 32> idPart{};
-	idPart[0] = 5;
-
 	can.init(value);
 
 	getNode().setName("org.test.DynamicIDServerCentralized");
 	getNode().setNodeID(5);
 
-	const auto unique_id = idPart;
+	UUID uuid = readUniqueID();
+	//DEBUG_Printf("%lu\r\n", uuid);
 	uavcan::protocol::HardwareVersion hwver;
-	std::copy(unique_id.begin(), unique_id.end(), hwver.unique_id.begin());
+	memcpy(&hwver.unique_id, &uuid, sizeof(uuid));
 	getNode().setHardwareVersion(hwver);
 
 	if (getNode().start() < 0) {
@@ -429,9 +433,9 @@ void StartDefaultTask(void const * argument)
 	    while (1);
 	}
 
-
+/*
 	uavcan::dynamic_node_id_server::IEventTracer event_tracer;
-	//uavcan::dynamic_node_id_server::IStorageBackend *storage_backend;
+	uavcan::dynamic_node_id_server::IStorageBackend storage_backend;
 
 	uavcan::dynamic_node_id_server::CentralizedServer server(getNode());
 
@@ -441,17 +445,17 @@ void StartDefaultTask(void const * argument)
     {
     	DEBUG_Printf("Failed to start the server\r\n");
     }
-
+*/
 	getNode().setModeOperational();
 
   /* Infinite loop */
   for(;;)
   {
-	    const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
-	    if (res < 0) {
-	    	DEBUG_Printf("UAVCAN spin fail\r\n");
-	    	while(1);
-	    }
+	  const int res = getNode().spin(uavcan::MonotonicDuration::fromMSec(500));
+	  if (res < 0) {
+		  DEBUG_Printf("UAVCAN spin fail\r\n");
+		  while(1);
+	  }
   }
   /* USER CODE END 5 */ 
 }

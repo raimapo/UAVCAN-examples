@@ -55,7 +55,9 @@
  * Three values of 32 bits each starting at this address
  * Use like this: STM32_UUID[0], STM32_UUID[1], STM32_UUID[2]
  */
-#define STM32_UUID ((uint32_t *)0x1FFF7A10)
+typedef std::array<std::uint8_t, 12> UUID;
+UUID readUniqueID();
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -398,6 +400,13 @@ void DEBUG_Printf(const char *fmt, ...)
     }
     return;
 }
+
+UUID readUniqueID()
+{
+   UUID out_bytes;
+   memcpy(out_bytes.data(), reinterpret_cast<const void*>(0x1FFF7A10), std::tuple_size<UUID>::value);
+   return out_bytes;
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -421,22 +430,12 @@ void StartDefaultTask(void const * argument)
 
 	getNode().setName("org.test.DynamicIDClient");
 
-	idPart[0] = STM32_UUID[0];
-	idPart[1] = STM32_UUID[1];
-	idPart[2] = STM32_UUID[2];
-	//DEBUG_Printf("%d\r\n", idPart[0]);
-	//DEBUG_Printf("%d\r\n", idPart[1]);
-	//DEBUG_Printf("%d\r\n", idPart[2]);
 
-	//DEBUG_Printf("%d\r\n", (uint32_t) HAL_GetUIDw0());
-	//DEBUG_Printf("%d\r\n", (uint32_t) HAL_GetUIDw1());
-	//DEBUG_Printf("%d\r\n", (uint32_t) HAL_GetUIDw2());
-
+	UUID uuid = readUniqueID();
+	//DEBUG_Printf("%lu\r\n", uuid);
 	uavcan::protocol::HardwareVersion hwver;
-	const auto unique_id = idPart;
-	std::copy(unique_id.begin(), unique_id.end(), hwver.unique_id.begin());
-
-	 getNode().setHardwareVersion(hwver);
+	memcpy(&hwver.unique_id, &uuid, sizeof(uuid));
+	getNode().setHardwareVersion(hwver);
 
 	if (getNode().start() < 0) {
 		DEBUG_Printf("UAVCAN start fail\r\n");
